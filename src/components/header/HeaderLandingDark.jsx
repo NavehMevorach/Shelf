@@ -116,7 +116,6 @@ const HeaderLandingDark = () => {
           </div>
         </div>
       </div>
-      {/* /.theme-main-menu */}
 
       {/* Mobile Menu Start */}
       <div className={click ? "mobile-menu  menu-open" : "mobile-menu"}>

@@ -2,7 +2,7 @@ import React from "react"
 import Values from "./Values"
 function ValuesSection() {
   return (
-    <div className="fancy-feature-twelve  md-pt-50" id="about">
+    <div className="twelve  md-pt-50" id="about">
       <div className="bg-wrapper">
         <div className="container">
           <div className="row">

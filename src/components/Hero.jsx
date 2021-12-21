@@ -41,6 +41,7 @@ function Hero() {
                 onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-input-updated">
                   <input
+                    autoComplete="off"
                     placeholder="Email Address"
                     name="email"
                     type="text"

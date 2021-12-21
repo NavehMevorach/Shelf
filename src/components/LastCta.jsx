@@ -24,7 +24,7 @@ function LastCta() {
   }
 
   return (
-    <div className="fancy-short-banner-seven mt-150 md-mt-100">
+    <div className=" mt-150 md-mt-100">
       <div className="container">
         <div className="row">
           <div className="col-xl-8 col-lg-11 m-auto">
@@ -38,6 +38,7 @@ function LastCta() {
               onSubmit={handleSubmit(onSubmit)}>
               <div className="form-input-updated">
                 <input
+                  autoComplete="off"
                   placeholder="Email Address"
                   name="email"
                   type="text"

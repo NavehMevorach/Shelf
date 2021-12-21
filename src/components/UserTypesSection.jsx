@@ -26,7 +26,6 @@ function UserTypesSection() {
             <div className="pricing-table-area-five md-mt-60">
               <UserTypes />
             </div>
-            {/* /.pricing-table-area-five */}
           </div>
           {/* End .col */}
         </div>

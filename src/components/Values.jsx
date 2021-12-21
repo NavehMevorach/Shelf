@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const FeatureContent = [
   {
@@ -19,7 +19,7 @@ const FeatureContent = [
     subTitle: `Use the world inventory in a sustainable way. `,
     hoverText: `  Bring all team slit managment task quis togather.`,
   },
-];
+]
 
 const FancyFeatureTwelve = () => {
   return (
@@ -36,11 +36,10 @@ const FancyFeatureTwelve = () => {
             </div>
             <div className="hover-text">{val.hoverText}</div>
           </div>
-          {/* /.block-style-seventeen */}
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default FancyFeatureTwelve;
+export default FancyFeatureTwelve

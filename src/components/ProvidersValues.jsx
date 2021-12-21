@@ -37,7 +37,6 @@ const ProvidersValues = () => {
             <h4 className="font-gordita">{val.title}</h4>
             <p>{val.desc}</p>
           </div>
-          {/* /.block-style-twentySeven */}
         </div>
       ))}
     </div>
