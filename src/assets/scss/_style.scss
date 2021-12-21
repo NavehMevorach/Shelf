@@ -1,38 +1,3 @@
-/*==================== Click Top ====================*/
-.scroll-top {
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  position: fixed;
-  bottom: 20px;
-  right: 5px;
-  z-index: 99;
-  text-align: center;
-  color: var(--white);
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 50%;
-  background: var(--black);
-  transition: all 0.3s ease-in-out;
-  img {
-    margin: auto;
-  }
-}
-.scroll-top:after {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  top: 100%;
-  left: 5%;
-  height: 10px;
-  width: 90%;
-  opacity: 1;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(0, 0, 0, 0.25) 0%,
-    rgba(0, 0, 0, 0) 80%
-  );
-}
 /*------------- Global Prefix -------------------*/
 ::-webkit-scrollbar {
   width: 5px;
@@ -72,6 +37,20 @@ body {
   line-height: 1.7em;
   color: var(--text-color);
 }
+
+.dark-style {
+  .mobile-menu {
+    background: #17192b;
+  }
+  .mobile-menu .nav-item .nav-link::before {
+    background: #fff;
+  }
+}
+
+.dark-style .theme-menu-five .right-widget .demo-button img {
+  filter: invert(1);
+}
+
 /*______________________ Global style ___________________*/
 .main-page-wrapper {
   overflow: hidden;
@@ -147,20 +126,12 @@ h6 {
 ::placeholder {
   color: #acaeb3;
 }
-.cs-screen {
-  position: absolute;
-}
 .illustration-holder {
   position: relative;
   display: flex;
   &--end {
     justify-content: flex-end;
   }
-}
-
-.shapes {
-  position: absolute;
-  z-index: -1;
 }
 .dark-style {
   background: var(--dark-bg);
@@ -209,19 +180,43 @@ h6 {
 .bottom-border {
   border-bottom: 1px solid #efefef;
 }
-/*-------------- Prefix Classes ----------------*/
-.tran3s {
+
+/*==================== Click Top ====================*/
+.scroll-top {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  text-align: center;
+  color: var(--white);
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: var(--black);
   transition: all 0.3s ease-in-out;
+  img {
+    margin: auto;
+  }
 }
-.tran4s {
-  transition: all 0.4s ease-in-out;
+.scroll-top:after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 1;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
 }
-.tran5s {
-  transition: all 0.5s ease-in-out;
-}
-.tran6s {
-  transition: all 0.6s ease-in-out;
-}
+
 /*^^^^^^^^^^^^^^^^^^^^^ Section Title ^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 .title-style-six h2 {
@@ -257,21 +252,7 @@ h6 {
   color: rgba(255, 255, 255, 0.54);
 }
 
-/*^^^^^^^^^^^^^^^^^^^^^ Theme Button ^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
-body .theme-btn-seven {
-  font-weight: 500;
-  text-align: center;
-  line-height: 60px;
-  color: var(--white);
-  border-radius: 6px;
-  padding: 0 45px;
-  background: var(--black);
-  transition: all 0.3s ease-in-out;
-}
-body .theme-btn-seven:hover {
-  background: var(--pink);
-}
 /*^^^^^^^^^^^^^^^^^^^^^ Theme Menu ^^^^^^^^^^^^^^^^^^^^^^^^^*/
 .theme-main-menu {
   position: fixed;
@@ -1025,7 +1006,7 @@ body .theme-btn-seven:hover {
   z-index: 1;
   animation: jump10p 5s infinite linear;
 }
-/*-------------Fancy Feature Eight -----------*/
+
 
 /*------------------ Fancy Text block Nineteen ----------------*/
 .fancy-text-block-nineteen .text-wrapper .client-info {
@@ -3318,4 +3299,85 @@ body .theme-btn-seven:hover {
 }
 .theme-menu-one.center-white .right-button-group a {
   color: var(--white);
+}
+
+
+
+
+.block-style-seventeen {
+  padding: 32px 50px 40px 44px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 17px;
+  position: relative;
+  z-index: 1;
+}
+.block-style-seventeen:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    111.21deg,
+    #b526a6 -2.4%,
+    #e14e66 46.51%,
+    #e38039 93.12%
+  );
+  border-radius: 17px;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.block-style-seventeen:hover:before {
+  opacity: 1;
+}
+.block-style-seventeen .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.block-style-seventeen h3 {
+  font-weight: 500;
+  font-size: 24px;
+  padding: 26px 0 20px;
+}
+.block-style-seventeen .static-text {
+  transition: all 0.3s ease-in-out;
+}
+.block-style-seventeen .hover-text {
+  font-size: 24px;
+  line-height: 1.5em;
+  color: #fff;
+  position: absolute;
+  left: 44px;
+  top: 112px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.block-style-seventeen:hover .static-text {
+  opacity: 0;
+}
+.block-style-seventeen:hover .hover-text {
+  opacity: 1;
+}
+.block-style-seventeen .js-tilt-glare {
+  border-radius: 17px;
+}
+
+/*------------------ Fancy Feature Twelve --------------*/
+.fancy-feature-twelve {
+  position: relative;
+  z-index: 2;
+}
+.fancy-feature-twelve .shape-one {
+  top: 3%;
+  left: 10%;
+}
+.fancy-feature-twelve .row {
+  margin: 0 -30px;
+}
+.fancy-feature-twelve .row [class*="col-"] {
+  padding: 0 30px;
 }
