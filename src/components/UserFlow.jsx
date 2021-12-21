@@ -61,7 +61,7 @@ function UserFlow() {
                 data-aos="fade-left"
                 data-aos-duration="1200">
                 <div className="text-wrapper">
-                  <h6>UNLOCK</h6>
+                  <h6>NLOCK</h6>
                   <h3 className="title">
                     Unloack the smart lock with the Shlef app
                   </h3>
