@@ -4,7 +4,7 @@ import Tilt from "react-parallax-tilt"
 function Partnerships() {
   return (
     <div
-      className="fancy-feature-fourteen mt-150 pt-80 md-mt-80"
+      className="fancy-feature-fourteen mt-150 pt-80 md-pt-150"
       id="partnerships">
       <div className="container">
         <div className="row">
@@ -28,7 +28,7 @@ function Partnerships() {
           <div className="col-lg-5 ml-auto">
             <div className="right-side md-mt-60">
               <div className="row">
-                <div className="col-md-6">
+                <div className="col">
                   <Tilt>
                     <div className="logo-meta lg d-flex align-items-center justify-content-center ">
                       <img src="images/logo/logo-17.svg" alt="logo" />
@@ -42,7 +42,7 @@ function Partnerships() {
                 </div>
                 {/* End .col */}
 
-                <div className="col-md-6">
+                <div className="col">
                   <Tilt>
                     <div className="logo-meta mt-40 d-flex align-items-center justify-content-center ">
                       <img src="images/logo/logo-19.svg" alt="logo" />

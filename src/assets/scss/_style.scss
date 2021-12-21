@@ -135,6 +135,8 @@ h6 {
 }
 .dark-style {
   background: var(--dark-bg);
+  // background: linear-gradient(315deg, #bc2bff, #7249fb);
+  // background: #7249fb;
   color: #afafaf;
 }
 .dark-style .h1,
@@ -2520,27 +2522,27 @@ h6 {
   position: relative;
   z-index: 1;
 }
-// .block-style-seventeen:before {
-//   content: "";
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   top: 0;
-//   left: 0;
-//   background: linear-gradient(
-//     111.21deg,
-//     #b526a6 -2.4%,
-//     #e14e66 46.51%,
-//     #e38039 93.12%
-//   );
-//   border-radius: 17px;
-//   z-index: -1;
-//   opacity: 0;
-//   transition: all 0.3s ease-in-out;
-// }
-// .block-style-seventeen:hover:before {
-//   opacity: 1;
-// }
+.block-style-seventeen:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    111.21deg,
+    #b526a6 -2.4%,
+    #e14e66 46.51%,
+    #e38039 93.12%
+  );
+  border-radius: 17px;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.block-style-seventeen:hover:before {
+  opacity: 1;
+}
 .block-style-seventeen .icon {
   width: 60px;
   height: 60px;

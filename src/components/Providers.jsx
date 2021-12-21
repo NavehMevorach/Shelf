@@ -4,7 +4,7 @@ import ProvidersValues from "./ProvidersValues"
 function Providers() {
   return (
     <div
-      className="fancy-feature-twentySeven lg-container pt-60  md-pt-60"
+      className="fancy-feature-twentySeven lg-container pt-80  md-pt-60"
       id="providers">
       <div className="container">
         <div className="title-style-six text-center mb-70 md-mb-20">
