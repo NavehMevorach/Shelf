@@ -1,5 +1,5 @@
 import React from "react"
-import ProvidersValues from "./ProvidersValues"
+// import ProvidersValues from "./ProvidersValues"
 const FeatureContent = [
   {
     icon: "78",
