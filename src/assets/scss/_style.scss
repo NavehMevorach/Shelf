@@ -78,7 +78,7 @@ h1 {
 }
 .h2,
 h2 {
-  font-size: 52px;
+  font-size: 42px;
   line-height: 1.1em;
 }
 .h3,
@@ -432,6 +432,7 @@ h6 {
 }
 .block-style-nine .text-wrapper .title {
   font-size: 42px;
+  font-weight: bold;
   line-height: 1.28em;
   padding: 5px 0 30px;
 }
@@ -2522,27 +2523,27 @@ h6 {
   position: relative;
   z-index: 1;
 }
-.block-style-seventeen:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: linear-gradient(
-    111.21deg,
-    #b526a6 -2.4%,
-    #e14e66 46.51%,
-    #e38039 93.12%
-  );
-  border-radius: 17px;
-  z-index: -1;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-.block-style-seventeen:hover:before {
-  opacity: 1;
-}
+// .block-style-seventeen:before {
+//   content: "";
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   background: linear-gradient(
+//     111.21deg,
+//     #b526a6 -2.4%,
+//     #e14e66 46.51%,
+//     #e38039 93.12%
+//   );
+//   border-radius: 17px;
+//   z-index: -1;
+//   opacity: 0;
+//   transition: all 0.3s ease-in-out;
+// }
+// .block-style-seventeen:hover:before {
+//   opacity: 1;
+// }
 .block-style-seventeen .icon {
   width: 60px;
   height: 60px;
@@ -2557,22 +2558,22 @@ h6 {
 .block-style-seventeen .static-text {
   transition: all 0.3s ease-in-out;
 }
-.block-style-seventeen .hover-text {
-  font-size: 24px;
-  line-height: 1.5em;
-  color: var(--white);
-  position: absolute;
-  left: 44px;
-  top: 112px;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-.block-style-seventeen:hover .static-text {
-  opacity: 0;
-}
-.block-style-seventeen:hover .hover-text {
-  opacity: 1;
-}
+// .block-style-seventeen .hover-text {
+//   font-size: 24px;
+//   line-height: 1.5em;
+//   color: var(--white);
+//   position: absolute;
+//   left: 44px;
+//   top: 112px;
+//   opacity: 0;
+//   transition: all 0.3s ease-in-out;
+// }
+// .block-style-seventeen:hover .static-text {
+//   opacity: 0;
+// }
+// .block-style-seventeen:hover .hover-text {
+//   opacity: 1;
+// }
 .block-style-seventeen .js-tilt-glare {
   border-radius: 17px;
 }
@@ -3238,9 +3239,9 @@ h6 {
 //   opacity: 0;
 //   transition: all 0.3s ease-in-out;
 // }
-.block-style-seventeen:hover:before {
-  opacity: 1;
-}
+// .block-style-seventeen:hover:before {
+//   opacity: 1;
+// }
 .block-style-seventeen .icon {
   width: 60px;
   height: 60px;
@@ -3265,12 +3266,12 @@ h6 {
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-.block-style-seventeen:hover .static-text {
-  opacity: 0;
-}
-.block-style-seventeen:hover .hover-text {
-  opacity: 1;
-}
+// .block-style-seventeen:hover .static-text {
+//   opacity: 0;
+// }
+// .block-style-seventeen:hover .hover-text {
+//   opacity: 1;
+// }
 .block-style-seventeen .js-tilt-glare {
   border-radius: 17px;
 }

@@ -21,9 +21,9 @@ function UserFlow() {
                 data-aos="fade-right"
                 data-aos-duration="1200">
                 <div className="text-wrapper">
-                  <h6>SELL TICKET</h6>
+                  <h6>LOCATE</h6>
                   <h3 className="title">
-                    Sell tickets anywhere anytime online.
+                    Locate a vehicle near by
                   </h3>
                   <p className="font-gordita">
                     Run your box office as it’s own website, embed it into your
@@ -61,9 +61,9 @@ function UserFlow() {
                 data-aos="fade-left"
                 data-aos-duration="1200">
                 <div className="text-wrapper">
-                  <h6>management</h6>
+                  <h6>UNLOCK</h6>
                   <h3 className="title">
-                    Manage client easily by a simple click.
+                    Unloack the smart lock with the Shlef app
                   </h3>
                   <p className="font-gordita">
                     Set-up a simple, professional box-office page on your site
@@ -83,9 +83,9 @@ function UserFlow() {
                 data-aos="fade-right"
                 data-aos-duration="1200">
                 <div className="text-wrapper">
-                  <h6>Create Event</h6>
+                  <h6>RIDE</h6>
                   <h3 className="title font-gordita">
-                    Provide your support now simple and easy.
+                    Ride with pride because you just helped the planet :)
                   </h3>
                   <p className="font-gordita">
                     Set-up a simple, professional box-office page on your site

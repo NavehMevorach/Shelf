@@ -3,19 +3,19 @@ import React from "react"
 const FeatureContent = [
   {
     icon: "78",
-    title: "Title",
+    title: "On Demand Mobility",
     subTitle: `Get access to what you need for a fraction of the price. `,
     hoverText: `Bring all team slit managment task quis togather.`,
   },
   {
     icon: "79",
-    title: "Title",
+    title: "Earn Frictionlessly",
     subTitle: `Make passive income simply by providing items to the platform`,
     hoverText: `  Bring all team slit managment task quis togather.`,
   },
   {
     icon: "80",
-    title: "Title",
+    title: "Ride with Pride ",
     subTitle: `Use the world inventory in a sustainable way. `,
     hoverText: `  Bring all team slit managment task quis togather.`,
   },
@@ -34,7 +34,7 @@ const FancyFeatureTwelve = () => {
               <h3>{val.title}</h3>
               <p>{val.subTitle}</p>
             </div>
-            <div className="hover-text">{val.hoverText}</div>
+            {/* <div className="hover-text">{val.hoverText}</div> */}
           </div>
         </div>
       ))}
