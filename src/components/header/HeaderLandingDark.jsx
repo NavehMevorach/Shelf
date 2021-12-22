@@ -6,7 +6,7 @@ import HeaderPopupForm from "../form/HeaderPopupForm"
 import logo from "./../../assets/images/logo.svg"
 import ils from "./../../assets/images/assets/ils_19.svg"
 import close from "./../../assets/images/icon/close.svg"
-import user from "./../../assets/images/icon/user.svg"
+import plus from "./../../assets/images/icon/plus.svg"
 
 Modal.setAppElement("#root")
 
@@ -89,12 +89,12 @@ const HeaderLandingDark = () => {
                     </li>
                     <li className="nav-item">
                       <a href="#user-flow" className="nav-link">
-                        Borrowers
+                        Ride
                       </a>
                     </li>
                     <li className="nav-item">
                       <a href="#providers" className="nav-link">
-                        Providers
+                        Earn
                       </a>
                     </li>
 
@@ -111,7 +111,7 @@ const HeaderLandingDark = () => {
           <div className="right-widget">
             <button className="demo-button" onClick={toggleModalOne}>
               <span>List item</span>
-              <img src={user} alt="icon" />
+              <img src={plus} alt="icon" />
             </button>
           </div>
         </div>
@@ -146,12 +146,12 @@ const HeaderLandingDark = () => {
           </li>
           <li className="nav-item">
             <a href="#user-flow" className="nav-link" onClick={handleClick}>
-              Borrowers
+              Ride
             </a>
           </li>
           <li className="nav-item">
             <a href="#providers" className="nav-link" onClick={handleClick}>
-              Providers
+              Earn
             </a>
           </li>
 

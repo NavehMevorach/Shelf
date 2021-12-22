@@ -3,7 +3,7 @@
   width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--white);
+  background: var(--black);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--pink);
@@ -19,15 +19,16 @@
   --blue-light: #3bb0d7;
   --purple-blue: #655c97;
   --vin-red: #973c56;
-  --dark-bg: #0f1123;
-  --pink: #ff2759;
-  --black: #000;
-  --white: #fff;
+  --dark-bg: #fff;
+  // --pink: #ff2759;
+  --pink: rgb(255, 0, 131);
+  --black: #fff;
+  --white: #000;
   scroll-behavior: smooth;
 }
 ::selection {
   background-color: var(--blue-dark);
-  color: var(--white);
+  color: var(--black);
 }
 body {
   font-family: "Raleway", sans-serif;
@@ -40,15 +41,17 @@ body {
 
 .dark-style {
   .mobile-menu {
-    background: #17192b;
+    // background: #17192b;
+    background: var(--black);
+    border-right: 1px solid var(--white);
   }
   .mobile-menu .nav-item .nav-link::before {
-    background: #fff;
+    background: var(--white);
   }
 }
 
 .dark-style .theme-menu-five .right-widget .demo-button img {
-  filter: invert(1);
+  // filter: invert(1);
 }
 
 /*______________________ Global style ___________________*/
@@ -137,7 +140,7 @@ h6 {
   background: var(--dark-bg);
   // background: linear-gradient(315deg, #bc2bff, #7249fb);
   // background: #7249fb;
-  color: #afafaf;
+  color: var(--white);
 }
 .dark-style .h1,
 .dark-style h1,
@@ -180,7 +183,7 @@ h6 {
   border-top: 1px solid #efefef;
 }
 .bottom-border {
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid var(--pink);
 }
 
 /*==================== Click Top ====================*/
@@ -251,11 +254,60 @@ h6 {
   padding-top: 30px;
 }
 .dark-style .title-style-six .text-xs {
-  color: rgba(255, 255, 255, 0.54);
+  // color: rgba(255, 255, 255, 0.54);
+  color: var(--white);
 }
 
-
 /*^^^^^^^^^^^^^^^^^^^^^ Theme Menu ^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+.hero-bg {
+  position: absolute;
+  max-height: 125%;
+  max-width: 125%;
+  min-width: 1000px;
+  transform: translate(-50%, -1000%) scale(0.85);
+  transform-origin: center;
+  opacity: 0.5;
+  -webkit-animation: rotating 100s linear infinite;
+  -moz-animation: rotating 100s linear infinite;
+  -ms-animation: rotating 100s linear infinite;
+  -o-animation: rotating 100s linear infinite;
+  animation: rotating 100s linear infinite;
+  z-index: -2;
+}
+
+.hero-bg--2 {
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 .theme-main-menu {
   position: fixed;
   z-index: 99;
@@ -273,7 +325,8 @@ h6 {
   z-index: 9999;
   padding-top: 0;
   padding-bottom: 0;
-  background: var(--white);
+  // background: var(--white);
+  background: rgba(72, 87, 118, 0.2);
   box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.1);
 }
 .theme-main-menu .logo a {
@@ -318,7 +371,6 @@ h6 {
 }
 .contact-form-updated .form-input-updated input {
   font-size: 17px;
-  width: 100%;
   line-height: 50px;
   font-size: 23px;
   border: solid 2px var(--white);
@@ -916,7 +968,6 @@ h6 {
 .theme-menu-four .right-button-group {
   margin-left: 100px;
 }
-
 
 /*------------------ Fancy Text block Nineteen ----------------*/
 .fancy-text-block-nineteen .text-wrapper .client-info {
@@ -2141,7 +2192,7 @@ h6 {
   flex-direction: row;
 }
 .dark-style.modal-contact-popup-one .main-body {
-  background: #2e2b3a;
+  background: var(--black);
 }
 .modal-contact-popup-one .main-body .close {
   position: absolute;
@@ -2318,38 +2369,29 @@ h6 {
   background: linear-gradient(90.6deg, #f548a0 2.93%, #f57c35 99.47%);
 }
 .dark-style .theme-main-menu.sticky-menu.fixed {
-  background: #17192b;
+  // background: #17192b;
+  background: rgba(72, 87, 118, 0.2);
 }
 
 .dark-style .navbar-nav .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(var(--pink), 0.6);
 }
 .dark-style .navbar-nav .nav-item.active .nav-link {
-  color: rgba(255, 255, 255, 1);
+  color: var(--pink);
 }
 .dark-style .theme-menu-five .navbar-nav .nav-item .nav-link.active {
-  color: var(--white);
+  color: var(--pink);
 }
 .demo-button {
   color: var(--white);
   border-color: var(--white);
-}
-.demo-button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(90.6deg, #f548a0 2.93%, #f57c35 99.47%);
-  border-radius: 8px;
-  z-index: -1;
-  opacity: 0;
   transition: all 0.3s ease-in-out;
 }
+
 .demo-button:hover {
-  background: transparent;
-  border-color: transparent;
+  background-color: var(--pink);
+  border-color: var(--white);
+  transition: all 0.3s ease-in-out;
 }
 .demo-button:hover:before {
   opacity: 1;
@@ -2518,76 +2560,65 @@ h6 {
 /*------------------ Fancy Feature Twelve --------------*/
 .block-style-seventeen {
   padding: 32px 50px 40px 44px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  // border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--white);
   border-radius: 17px;
   position: relative;
   z-index: 1;
+  // transition: all 0.3s ease-in-out;
 }
-// .block-style-seventeen:before {
-//   content: "";
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   top: 0;
-//   left: 0;
-//   background: linear-gradient(
-//     111.21deg,
-//     #b526a6 -2.4%,
-//     #e14e66 46.51%,
-//     #e38039 93.12%
-//   );
-//   border-radius: 17px;
-//   z-index: -1;
-//   opacity: 0;
-//   transition: all 0.3s ease-in-out;
-// }
-// .block-style-seventeen:hover:before {
-//   opacity: 1;
-// }
+.block-style-seventeen:hover {
+  border-color: var(--pink);
+  color: var(--black);
+}
+.block-style-seventeen:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--pink);
+  border-radius: 17px;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.block-style-seventeen:hover:before {
+  opacity: 1;
+}
 .block-style-seventeen .icon {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  // background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 0, 131, 0.05);
 }
 .block-style-seventeen h3 {
   font-weight: 500;
   font-size: 24px;
   padding: 26px 0 20px;
 }
-.block-style-seventeen .static-text {
-  transition: all 0.3s ease-in-out;
+.block-style-seventeen:hover h3 {
+  color: var(--black);
 }
-// .block-style-seventeen .hover-text {
-//   font-size: 24px;
-//   line-height: 1.5em;
-//   color: var(--white);
-//   position: absolute;
-//   left: 44px;
-//   top: 112px;
-//   opacity: 0;
-//   transition: all 0.3s ease-in-out;
-// }
-// .block-style-seventeen:hover .static-text {
-//   opacity: 0;
-// }
-// .block-style-seventeen:hover .hover-text {
-//   opacity: 1;
-// }
+
 .block-style-seventeen .js-tilt-glare {
   border-radius: 17px;
 }
 
 /*------------------ Fancy Feature Fourteen --------------*/
 .fancy-feature-fourteen .logo-meta {
-  background: rgba(255, 255, 255, 0.1);
+  // background: rgba(255, 255, 255, 0.1);
+  background: rgba(72, 87, 118, 0.2);
   border-radius: 20px;
   height: 170px;
   margin-bottom: 40px;
   transition: 0.3s;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.15);
+    // background: rgba(255, 255, 255, 0.15);
+    background: rgba(72, 87, 118, 0.25);
   }
 }
 .fancy-feature-fourteen .logo-meta.lg {
@@ -2634,13 +2665,14 @@ h6 {
 
 /*-------------- Client Feedback Slider Five ----------------*/
 .client-feedback-slider-five {
-  height: 100vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 2;
 }
+
 // .client-feedback-slider-five:before {
 //   content: "";
 //   position: absolute;
@@ -2662,8 +2694,8 @@ h6 {
 //   border-radius: 50%;
 //   top: 19%;
 //   left: 15%;
-//   background: rgba(255, 4, 64, 0.12);
-//   filter: blur(300px);
+//   // background: rgba(255, 4, 64, 0.12);
+//   // filter: blur(300px);
 //   transform: rotate(-180deg);
 //   z-index: -2;
 // }
@@ -2794,7 +2826,8 @@ h6 {
   padding: 45px 0 7px;
 }
 .pricing-table-area-five .pr-table-wrapper .trial-text {
-  color: rgba(255, 255, 255, 0.54);
+  // color: rgba(255, 255, 255, 0.54);
+  color: var(--white);
 }
 .pricing-table-area-five .pr-table-wrapper .trial-button {
   width: 170px;
@@ -3209,71 +3242,6 @@ h6 {
 }
 .theme-menu-one.center-white .right-button-group a {
   color: var(--white);
-}
-
-
-
-
-.block-style-seventeen {
-  padding: 32px 50px 40px 44px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 17px;
-  position: relative;
-  z-index: 1;
-}
-// .block-style-seventeen:before {
-//   content: "";
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   top: 0;
-//   left: 0;
-//   background: linear-gradient(
-//     111.21deg,
-//     #b526a6 -2.4%,
-//     #e14e66 46.51%,
-//     #e38039 93.12%
-//   );
-//   border-radius: 17px;
-//   z-index: -1;
-//   opacity: 0;
-//   transition: all 0.3s ease-in-out;
-// }
-// .block-style-seventeen:hover:before {
-//   opacity: 1;
-// }
-.block-style-seventeen .icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-}
-.block-style-seventeen h3 {
-  font-weight: 500;
-  font-size: 24px;
-  padding: 26px 0 20px;
-}
-.block-style-seventeen .static-text {
-  transition: all 0.3s ease-in-out;
-}
-.block-style-seventeen .hover-text {
-  font-size: 24px;
-  line-height: 1.5em;
-  color: #fff;
-  position: absolute;
-  left: 44px;
-  top: 112px;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-// .block-style-seventeen:hover .static-text {
-//   opacity: 0;
-// }
-// .block-style-seventeen:hover .hover-text {
-//   opacity: 1;
-// }
-.block-style-seventeen .js-tilt-glare {
-  border-radius: 17px;
 }
 
 /*------------------ Fancy Feature Twelve --------------*/

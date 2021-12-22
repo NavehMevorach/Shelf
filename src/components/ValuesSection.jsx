@@ -2,18 +2,14 @@ import React from "react"
 import Values from "./Values"
 function ValuesSection() {
   return (
-    <div className="fancy-feature-twelve md-pt-50" id="about">
+    <div className="fancy-feature-twelve md-pt-50" id="">
       <div className="bg-wrapper">
         <div className="container">
-          <div className="row">
-            <div className="col-xl-7 col-lg-10 col-md-8 m-auto">
-              <div className="title-style-six text-center">
-                <h2>
-                  Do <span>More</span>, Pay <span>Less</span>
-                </h2>
-              </div>
-              {/* /.title-style-six */}
-            </div>
+          <div className="title-style-six text-center md-mb-150">
+            <h2>
+              Unlock the <span>True Potential</span> <br />
+              of <span>Community-Driven</span> Micro-Mobility
+            </h2>
           </div>
           {/* End .row */}
           <Values />

@@ -8,6 +8,7 @@ import Partnerships from "../components/Partnerships"
 import LastCta from "../components/LastCta"
 import FooterSection from "../components/FooterSection"
 import Providers from "../components/Providers"
+import About from "../components/About"
 
 const ProductLandingDark = () => {
   return (
@@ -17,6 +18,7 @@ const ProductLandingDark = () => {
       </Helmet>
       <HeaderLandingDark />
       <Hero />
+      <About />
       <ValuesSection />
       <UserFlow />
       <Providers />

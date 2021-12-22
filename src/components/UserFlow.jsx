@@ -6,13 +6,6 @@ function UserFlow() {
   return (
     <div className="fancy-feature-seven">
       <div className="container">
-        <div className="title-style-six text-center mb-250 md-mb-150">
-          <h2>
-            Unlock the true <span>Potential</span> <br />
-            of Community-Driven Micro-Mobility
-          </h2>
-        </div>
-
         <div className="block-wrapper" id="user-flow">
           <div className="block-style-nine">
             <div className="row align-items-center">
@@ -22,14 +15,10 @@ function UserFlow() {
                 data-aos-duration="1200">
                 <div className="text-wrapper">
                   <h6>LOCATE</h6>
-                  <h3 className="title">
-                    Locate a vehicle near by
-                  </h3>
+                  <h3 className="title">Locate a vehicle nearby</h3>
                   <p className="font-gordita">
-                    Run your box office as it’s own website, embed it into your
-                    website with a simple piece of HTML or widget, or put it on
-                    your Facebook page*. All with a reliable, mobile-friendly
-                    design.
+                    Use the shlef app to find and navigate to a nearby vehicel.
+                    you can filter them by type, battery cost and location.
                   </p>
                 </div>{" "}
                 {/* /.text-wrapper */}
@@ -63,13 +52,12 @@ function UserFlow() {
                 <div className="text-wrapper">
                   <h6>UNLOCK</h6>
                   <h3 className="title">
-                    Unloack the smart lock with the Shlef app
+                    Unlock the smart lock with the Shelf app
                   </h3>
                   <p className="font-gordita">
-                    Set-up a simple, professional box-office page on your site
-                    (or standalone) in minutes. Then design & customise it as
-                    much (or as little) as you like with our user-friendly
-                    dashboard.
+                    When you arrive at the vehicle, scan the lock and get the
+                    vehicle item to ensure you come to the right one. Then
+                    unlock the lock through the app.
                   </p>
                 </div>{" "}
                 {/* /.text-wrapper */}
@@ -88,10 +76,10 @@ function UserFlow() {
                     Ride with pride because you just helped the planet :)
                   </h3>
                   <p className="font-gordita">
-                    Set-up a simple, professional box-office page on your site
-                    (or standalone) in minutes. Then design and customise it as
-                    much (or as little) as you like with our user-friendly
-                    dashboard
+                    With each ride, you cut co2 emissions. Sharing micro
+                    mobility transportation is the future of sustainable urban
+                    mobility, and you should be proud that you are part of this
+                    revolution.
                   </p>
                 </div>
                 {/* /.text-wrapper */}

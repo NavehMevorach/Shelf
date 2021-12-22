@@ -383,7 +383,6 @@
   }
   .client-feedback-slider-five {
     margin-top: 0;
-    padding-bottom: 130px;
   }
   .pricing-section-five {
     margin-top: 80px;
@@ -471,6 +470,20 @@
 /*(min-width: 992px) and (max-width: 1199px)*/
 
 @media (max-width: 991px) {
+  .form-input-updated {
+    flex-direction: column;
+
+    input {
+      margin: 0;
+      margin-right: 0 !important;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .demo-button {
+      margin: 0;
+      width: 100%;
+    }
+  }
   .title-style-six h6 {
     font-size: 15px;
     padding-bottom: 15px;
@@ -1081,7 +1094,7 @@
     font-size: 15px;
   }
   .block-style-nine .text-wrapper .title {
-    font-size: 35px;
+    font-size: 30px;
     padding-bottom: 15px;
   }
   .block-style-nine .text-wrapper p {

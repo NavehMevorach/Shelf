@@ -2,6 +2,7 @@ import React from "react"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as Yup from "yup"
+import bg from "./../assets/images/assets/bgHero.svg"
 
 function Hero() {
   // for validation
@@ -60,6 +61,8 @@ function Hero() {
           </div>
         </div>
       </div>
+      <img className="hero-bg" src={bg} />
+      {/* <img className="hero-bg hero-bg--2" src={bg} /> */}
     </div>
   )
 }
