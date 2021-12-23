@@ -29,6 +29,7 @@ const HeaderPopupForm = () => {
       .catch((err) => {
         console.log(err)
       })
+    e.target.reset()
   }
 
   return (

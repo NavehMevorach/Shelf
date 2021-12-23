@@ -28,6 +28,7 @@ function Hero() {
       .catch((err) => {
         console.log(err)
       })
+    e.target.reset()
   }
   return (
     <div className="client-feedback-slider-five mt-200 md-mt-10" id="home">
