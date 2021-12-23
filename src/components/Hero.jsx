@@ -30,12 +30,12 @@ function Hero() {
           <div className="col-xl-7 col-lg-10 col-md-9 m-auto">
             <div className="title-style-six text-center mt-25">
               <h2>
-                <span>Micro</span>-mobility <br />
-                Powerd by <span>You</span>
+                <span>Micro</span>-Mobility <br />
+                Powered by <span>You</span>
               </h2>
               <p>
                 Access e-Scooters and Bikes <br />
-                wherever and whenever you need{" "}
+                wherever and whenever you need
               </p>
               <form
                 className="contact-form-updated mt-30"
@@ -54,7 +54,7 @@ function Hero() {
                       {errors.email?.message}
                     </div>
                   )}
-                  <button className="demo-button">Hell ya</button>
+                  <button className="demo-button">Join Beta</button>
                 </div>
               </form>
             </div>
@@ -62,7 +62,6 @@ function Hero() {
         </div>
       </div>
       <img className="hero-bg" src={bg} />
-      {/* <img className="hero-bg hero-bg--2" src={bg} /> */}
     </div>
   )
 }

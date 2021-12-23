@@ -10,15 +10,15 @@ function Partnerships() {
         <div className="row">
           <div className="col-xl-6 col-lg-7 col-md-8">
             <div className="title-style-six">
-              <h6 style={{ color: "#FF2759", fontSize: "15px" }}>
+              <h6 style={{ color: "#ff0083", fontSize: "15px" }}>
                 Partnerships
               </h6>
               <h2>
                 Don't Worry! <br /> We got You <span>Covered</span>
               </h2>
               <p className="text-xs pr-5 mr-5">
-                Shelf is working with the finnest Insurance companies out there.
-                All items are isnured, all rides are insured so you can be
+                Shelf is working with the finest Insurance companies out there.
+                All items are insured, all rides are insured so you can be
                 always Carefree
               </p>
             </div>

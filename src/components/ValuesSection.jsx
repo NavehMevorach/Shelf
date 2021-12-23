@@ -5,7 +5,7 @@ function ValuesSection() {
     <div className="fancy-feature-twelve md-pt-50" id="">
       <div className="bg-wrapper">
         <div className="container">
-          <div className="title-style-six text-center md-mb-150">
+          <div className="title-style-six text-center">
             <h2>
               Unlock the <span>True Potential</span> <br />
               of <span>Community-Driven</span> Micro-Mobility

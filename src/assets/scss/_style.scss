@@ -466,13 +466,16 @@ h6 {
 }
 /*----------------- Fancy Feature Seven --------------*/
 .fancy-feature-seven {
-  padding: 250px 0 150px;
+  padding-top: 250px;
   position: relative;
   z-index: 1;
 }
 
 .block-style-nine {
   position: relative;
+  padding-bottom: 30px;
+  position: relative;
+  height: 90vh;
 }
 
 .block-style-nine .text-wrapper h6 {
@@ -493,10 +496,7 @@ h6 {
   font-size: 20px;
   line-height: 1.8em;
 }
-.block-style-nine {
-  padding-bottom: 30px;
-  position: relative;
-}
+
 // .block-style-nine:before {
 //   content: "";
 //   position: absolute;

@@ -43,12 +43,11 @@ function UserFlow() {
                 <div className="illustration-holder">
                   <img src={appTwo} alt="illustrator" />
                 </div>{" "}
-                {/* /.illustration-holder */}
               </div>
               <div
                 className="col-lg-5 block-style-nine-col-first"
                 data-aos="fade-left"
-                data-aos-duration="1200">
+                data-aos-duration="12000">
                 <div className="text-wrapper">
                   <h6>UNLOCK</h6>
                   <h3 className="title">
@@ -60,7 +59,6 @@ function UserFlow() {
                     unlock the lock through the app.
                   </p>
                 </div>{" "}
-                {/* /.text-wrapper */}
               </div>
             </div>
           </div>
