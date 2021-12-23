@@ -3,14 +3,15 @@ import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as Yup from "yup"
 import bg from "./../assets/images/assets/bgHero.svg"
+import firebase from "./../firebase"
 
 function Hero() {
+  const ref = firebase.firestore().collection("potentialusers")
   // for validation
   const validationSchema = Yup.object().shape({
     email: Yup.string()
       .required("Email is required")
       .email("Entered value does not match email format"),
-    sendMessage: Yup.string().required("Please,leave us a message."),
   })
 
   const formOptions = { resolver: yupResolver(validationSchema) }
@@ -20,8 +21,13 @@ function Hero() {
 
   function onSubmit(data, e) {
     // display form data on success
-    console.log("Message submited: " + JSON.stringify(data))
-    e.target.reset()
+    console.log(data)
+    ref
+      .doc()
+      .set(data)
+      .catch((err) => {
+        console.log(err)
+      })
   }
   return (
     <div className="client-feedback-slider-five mt-200 md-mt-10" id="home">
@@ -61,7 +67,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <img className="hero-bg" src={bg} />
+      <img alt="dots bg" className="hero-bg" src={bg} />
     </div>
   )
 }

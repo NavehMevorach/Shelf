@@ -2,15 +2,17 @@ import React from "react"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as Yup from "yup"
+import firebase from "./../../firebase"
 
 const HeaderPopupForm = () => {
+  const ref = firebase.firestore().collection("potentialProviders")
+
   // for validation
   const validationSchema = Yup.object().shape({
     name: Yup.string().required(" Name is required"),
     email: Yup.string()
       .required("Email is required")
       .email("Entered value does not match email format"),
-    sendMessage: Yup.string().required("Please, add the model."),
   })
 
   const formOptions = { resolver: yupResolver(validationSchema) }
@@ -20,8 +22,13 @@ const HeaderPopupForm = () => {
 
   function onSubmit(data, e) {
     // display form data on success
-    console.log("Message submited: " + JSON.stringify(data))
-    e.target.reset()
+    console.log(data)
+    ref
+      .doc()
+      .set(data)
+      .catch((err) => {
+        console.log(err)
+      })
   }
 
   return (
@@ -70,16 +77,14 @@ const HeaderPopupForm = () => {
               <label>Escooter / Ebike / Bike</label>
               <input
                 autoComplete="off"
-                placeholder="Model"
-                name="sendMessage"
                 type="text"
-                {...register("message")}
-                className={`${errors.sendMessage ? "is-invalid" : ""}`}
+                placeholder="Your Model"
+                name="model"
+                {...register("name")}
+                className={`${errors.name ? "is-invalid" : ""}`}
               />
-              {errors.sendMessage && (
-                <div className="invalid-feedback">
-                  {errors.sendMessage?.message}
-                </div>
+              {errors.model && (
+                <div className="invalid-feedback">{errors.model?.message}</div>
               )}
             </div>
           </div>

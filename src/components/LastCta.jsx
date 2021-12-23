@@ -2,8 +2,10 @@ import React from "react"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as Yup from "yup"
+import firebase from "./../firebase"
 
 function LastCta() {
+  const ref = firebase.firestore().collection("potentialusers")
   // for validation
   const validationSchema = Yup.object().shape({
     email: Yup.string()
@@ -19,8 +21,13 @@ function LastCta() {
 
   function onSubmit(data, e) {
     // display form data on success
-    console.log("Message submited: " + JSON.stringify(data))
-    e.target.reset()
+    console.log(data)
+    ref
+      .doc()
+      .set(data)
+      .catch((err) => {
+        console.log(err)
+      })
   }
 
   return (
