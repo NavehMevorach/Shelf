@@ -71,6 +71,7 @@ const HeaderLandingDark = () => {
                     items={[
                       "home",
                       "about",
+                      "why",
                       "user-flow",
                       "providers",
                       "partnerships",
@@ -85,6 +86,11 @@ const HeaderLandingDark = () => {
                     <li className="nav-item">
                       <a href="#about" className="nav-link">
                         About
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a href="#why" className="nav-link">
+                        Why
                       </a>
                     </li>
                     <li className="nav-item">
@@ -131,7 +137,14 @@ const HeaderLandingDark = () => {
 
         <Scrollspy
           className="navbar-nav  "
-          items={["home", "about", "user-flow", "providers", "partnerships"]}
+          items={[
+            "home",
+            "about",
+            "why",
+            "user-flow",
+            "providers",
+            "partnerships",
+          ]}
           currentClassName="active"
           offset={-90}>
           <li className="nav-item">
@@ -142,6 +155,11 @@ const HeaderLandingDark = () => {
           <li className="nav-item">
             <a href="#about" className="nav-link" onClick={handleClick}>
               About
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#why" className="nav-link" onClick={handleClick}>
+              Why
             </a>
           </li>
           <li className="nav-item">

@@ -12,12 +12,13 @@ function About() {
                 What is <span>Shelf</span>
               </h2>
               <p className="mt-40 md-mt-30">
-                Shelf is an automated smart lock-based scooter-sharing platform.
-                Automated means that we take care of charging, repairing and
-                everything else. All you have to do is sign up for our app
-                follow the instructions and lock your scooter in the city. And
-                thanks to our insurance policy. you dont need to worry about
-                theft or damage
+                Shelf is an automated peer-to-peer urban-mobility sharing
+                platform. Automated means that we take care of charging,
+                repairing and everything else. All you have to do is sign up for
+                our app, follow the instructions, add a vehicle by connecting it
+                to a shelf lock and lock it somewhere in the city. And Thanks to
+                our insurance policy, You don't need to worry about theft or
+                damages.
               </p>
             </div>
           </div>
