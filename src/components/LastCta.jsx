@@ -30,7 +30,7 @@ function LastCta() {
           <div className="col-xl-8 col-lg-11 m-auto">
             <div className="title-style-six text-center">
               <h2>
-                Love our Vision? <br /> stay <span>Updated</span>
+                Love our Vision? <br /> <span>Join</span> our Beta
               </h2>
             </div>
             <form
@@ -50,7 +50,7 @@ function LastCta() {
                     {errors.email?.message}
                   </div>
                 )}
-                <button className="demo-button">Hell ya</button>
+                <button className="demo-button">Join</button>
               </div>
             </form>
           </div>
