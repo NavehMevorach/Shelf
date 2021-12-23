@@ -1084,6 +1084,17 @@
     padding: 120px 0 0px;
   }
 
+  .block-style-nine .row {
+    padding-top: 100px;
+  }
+
+  .block-style-nine:nth-child(2) .row {
+    margin-top: 100px;
+  }
+  .block-style-nine:nth-child(3) .row {
+    margin-top: 100px;
+  }
+
   .block-style-nine-col-first {
     order: 1;
   }

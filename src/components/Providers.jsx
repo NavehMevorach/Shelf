@@ -26,7 +26,7 @@ const FeatureContent = [
 function Providers() {
   return (
     <div
-      className="fancy-feature-twentySeven lg-container pt-80 md-mt-80 md-pt-60"
+      className="fancy-feature-twelve  lg-container pt-80 md-mt-150 md-pt-100"
       id="providers">
       <div className="container">
         <div className="title-style-six text-center md-mb-20">

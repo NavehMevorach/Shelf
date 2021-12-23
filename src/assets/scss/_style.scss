@@ -201,26 +201,11 @@ h6 {
   font-size: 18px;
   cursor: pointer;
   border-radius: 50%;
-  background: var(--white);
+  background: var(--black);
   transition: all 0.3s ease-in-out;
   img {
     margin: auto;
   }
-}
-.scroll-top:after {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  top: 100%;
-  left: 5%;
-  height: 10px;
-  width: 90%;
-  opacity: 1;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(0, 0, 0, 0.25) 0%,
-    rgba(0, 0, 0, 0) 80%
-  );
 }
 
 /*^^^^^^^^^^^^^^^^^^^^^ Section Title ^^^^^^^^^^^^^^^^^^^^^^^^^*/
