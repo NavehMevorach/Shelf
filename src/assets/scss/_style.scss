@@ -1825,7 +1825,7 @@ h6 {
   color: var(--black);
 }
 .dark-style.modal-contact-popup-one .theme-btn-seven {
-  background: rgba(255, 255, 255, 0.25);
+  font-weight: bold;
 }
 
 .dark-style .modal-contact-popup-one .right-side:before {
@@ -2417,7 +2417,7 @@ h6 {
   color: var(--black);
 }
 .theme-footer-six .email {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(var(--black), 0.8);
 }
 .theme-footer-six .email:hover {
   text-decoration: underline;
