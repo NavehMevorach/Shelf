@@ -1,6 +1,7 @@
 import React from "react"
 import appOne from "./../assets/images/assets/appOne.png"
 import appTwo from "./../assets/images/assets/appTwo.png"
+import appThree from "./../assets/images/assets/appThree.png"
 
 function UserFlow() {
   return (
@@ -87,7 +88,7 @@ function UserFlow() {
                 data-aos="fade-left"
                 data-aos-duration="1200">
                 <div className="illustration-holder illustration-holder--end">
-                  <img src={appOne} alt="illustrator" />
+                  <img src={appThree} alt="illustrator" />
                 </div>
                 {/* /.illustration-holder */}
               </div>
