@@ -24,7 +24,6 @@ function Partnerships() {
             </div>
             {/*  /.title-style-six */}
           </div>
-
           <div className="col-lg-5 ml-auto">
             <div className="right-side md-mt-60">
               <div className="row">

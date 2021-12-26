@@ -5,6 +5,7 @@ import Hero from "../components/Hero"
 import ValuesSection from "../components/ValuesSection"
 import UserFlow from "../components/UserFlow"
 import Partnerships from "../components/Partnerships"
+import PartnershipsTwo from "../components/PartnershipsTwo"
 import LastCta from "../components/LastCta"
 import FooterSection from "../components/FooterSection"
 import Providers from "../components/Providers"
@@ -22,7 +23,8 @@ const ProductLandingDark = () => {
       <ValuesSection />
       <UserFlow />
       <Providers />
-      <Partnerships />
+      {/* <Partnerships /> */}
+      <PartnershipsTwo />
       <LastCta />
       <FooterSection />
     </div>

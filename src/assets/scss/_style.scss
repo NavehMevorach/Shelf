@@ -312,7 +312,8 @@ h6 {
   padding-top: 0;
   padding-bottom: 0;
   // background: var(--black);
-  background: rgba(72, 87, 118, 0.2);
+  // background: rgba(72, 87, 118, 0.2);
+  background-color: var(--white);
   box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.1);
 }
 .theme-main-menu .logo a {
@@ -1866,7 +1867,8 @@ h6 {
 }
 .dark-style .theme-main-menu.sticky-menu.fixed {
   // background: #17192b;
-  background: rgba(72, 87, 118, 0.2);
+  // background: rgba(72, 87, 118, 0.2);
+  background-color: var(--white);
 }
 
 .dark-style .navbar-nav .nav-item .nav-link {
