@@ -20,6 +20,7 @@ const App = () => {
   }, [])
   useEffect(() => {
     initReactGA()
+    console.log("GA was initiated")
   }, [])
 
   return (
