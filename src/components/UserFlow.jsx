@@ -5,11 +5,11 @@ import appThree from "./../assets/images/assets/appThree.png"
 
 function UserFlow() {
   return (
-    <div className="fancy-feature-seven">
+    <div className="fancy-feature-seven" id="ride">
       <div className="container">
-        <div className="block-wrapper" id="user-flow">
+        <div className="block-wrapper">
           <div className="block-style-nine">
-            <div className="row align-items-center">
+            <div className="row">
               <div
                 className="col-lg-5 order-lg-first"
                 data-aos="fade-right"
@@ -36,7 +36,7 @@ function UserFlow() {
             </div>
           </div>
           <div className="block-style-nine">
-            <div className="row align-items-center">
+            <div className="row ">
               <div
                 className="col-lg-7 col-md-9 m-auto block-style-nine-col-second"
                 data-aos="fade-right"
@@ -64,7 +64,7 @@ function UserFlow() {
             </div>
           </div>
           <div className="block-style-nine">
-            <div className="row align-items-center">
+            <div className="row ">
               <div
                 className="col-lg-5"
                 data-aos="fade-right"

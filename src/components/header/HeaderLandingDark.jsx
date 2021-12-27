@@ -72,9 +72,9 @@ const HeaderLandingDark = () => {
                       "home",
                       "about",
                       "why",
-                      "user-flow",
-                      "providers",
-                      "partnerships",
+                      "ride",
+                      "earn",
+                      "Insurance",
                     ]}
                     currentClassName="active"
                     offset={-90}>
@@ -94,19 +94,19 @@ const HeaderLandingDark = () => {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="#user-flow" className="nav-link">
+                      <a href="#ride" className="nav-link">
                         Ride
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="#providers" className="nav-link">
+                      <a href="#earn" className="nav-link">
                         Earn
                       </a>
                     </li>
 
                     <li className="nav-item">
-                      <a href="#partnerships" className="nav-link">
-                        Partnerships
+                      <a href="#Insurance" className="nav-link">
+                        Insurance
                       </a>
                     </li>
                   </Scrollspy>
@@ -137,14 +137,7 @@ const HeaderLandingDark = () => {
 
         <Scrollspy
           className="navbar-nav  "
-          items={[
-            "home",
-            "about",
-            "why",
-            "user-flow",
-            "providers",
-            "partnerships",
-          ]}
+          items={["home", "about", "why", "ride", "earn", "Insurance"]}
           currentClassName="active"
           offset={-90}>
           <li className="nav-item">
@@ -163,19 +156,19 @@ const HeaderLandingDark = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#user-flow" className="nav-link" onClick={handleClick}>
+            <a href="#ride" className="nav-link" onClick={handleClick}>
               Ride
             </a>
           </li>
           <li className="nav-item">
-            <a href="#providers" className="nav-link" onClick={handleClick}>
+            <a href="#earn" className="nav-link" onClick={handleClick}>
               Earn
             </a>
           </li>
 
           <li className="nav-item">
-            <a href="#partnerships" className="nav-link" onClick={handleClick}>
-              Partnerships
+            <a href="#Insurance" className="nav-link" onClick={handleClick}>
+              Insurance
             </a>
           </li>
         </Scrollspy>

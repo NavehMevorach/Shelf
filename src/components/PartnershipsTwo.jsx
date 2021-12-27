@@ -2,7 +2,7 @@ import React from "react"
 
 function PartnershipsTwo() {
   return (
-    <div className="client-feedback-slider-five md-pt-60" id="partnerships">
+    <div className="client-feedback-slider-five md-pt-60" id="Insurance">
       <div className="container">
         <div className="title-style-six text-center md-mb-20">
           <div className="row">
