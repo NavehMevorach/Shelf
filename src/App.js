@@ -4,8 +4,17 @@ import ScrollToTop from "./components/ScrollToTop"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import ReactGA from "react-ga"
-ReactGA.initialize("G-BHDVVSZ738")
 
+const initGA = () => {
+  console.log("GA init")
+  ReactGA.initialize("UA-192315689-1")
+  ReactGA.initialize("G-BHDVVSZ738")
+}
+const logPageView = () => {
+  console.log(`Logging pageview for ${window.location.pathname}`)
+  ReactGA.set({ page: window.location.pathname })
+  ReactGA.pageview(window.location.pathname)
+}
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -14,7 +23,8 @@ const App = () => {
   }, [])
   useEffect(() => {
     // This line will trigger on a route change
-    ReactGA.pageview(window.location.pathname + window.location.search)
+    initGA()
+    logPageView()
   })
 
   return (
