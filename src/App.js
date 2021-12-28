@@ -3,17 +3,21 @@ import Routes from "./router/Routes"
 import ScrollToTop from "./components/ScrollToTop"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import ReactGA from "react-ga"
+import GA4React from "ga-4-react"
+const ga4react = new GA4React("G-70NMJDP9ZT")
 
 const initGA = () => {
-  console.log("GA init")
-  ReactGA.initialize("G-YKV8HVMHG2")
+  ga4react.initialize().then(
+    (ga4) => {
+      ga4.pageview("path")
+      ga4.gtag("event", "pageview", "path") // or your custom gtag event
+    },
+    (err) => {
+      console.error(err)
+    }
+  )
 }
-const logPageView = () => {
-  console.log(`Logging pageview for ${window.location.pathname}`)
-  ReactGA.set({ page: window.location.pathname })
-  ReactGA.pageview(window.location.pathname)
-}
+
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -23,7 +27,6 @@ const App = () => {
   useEffect(() => {
     // This line will trigger on a route change
     initGA()
-    logPageView()
   })
 
   return (
