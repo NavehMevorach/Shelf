@@ -61,7 +61,7 @@ function Hero() {
                       {errors.email?.message}
                     </div>
                   )}
-                  <button className="demo-button">Join Beta</button>
+                  <button className="demo-button">I'm Intrested</button>
                 </div>
               </form>
             </div>
