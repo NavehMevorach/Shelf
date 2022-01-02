@@ -21,7 +21,7 @@ const HeaderLandingDark = () => {
   }
 
   const changeBackground = () => {
-    if (window.scrollY >= 90) {
+    if (window.scrollY >= 30) {
       setNavbar(true)
     } else {
       setNavbar(false)
