@@ -9,7 +9,7 @@ function PartnershipsTwo() {
             <div className="col-xl-7 col-lg-11 m-auto">
               <div className="upper-title">Parterships</div>
               <h2>
-                Dony worry! <br /> We got you <span>Covered!</span>
+                Don't worry! <br /> We got you <span>Covered!</span>
               </h2>
               <p className="mt-40 md-mt-30">
                 Shelf is working with the finest Insurance companies out there.
