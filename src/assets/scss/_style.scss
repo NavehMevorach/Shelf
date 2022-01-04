@@ -221,6 +221,10 @@ h6 {
   line-height: 2em;
 }
 
+.title-style-six button {
+  align-self: center;
+}
+
 .dark-style .title-style-six h2 {
   color: var(--black);
 }
@@ -344,34 +348,12 @@ h6 {
   color: #dc3545;
 }
 
-.contact-form-updated {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-form-updated .form-input-updated {
+.form-input-updated {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-}
-.contact-form-updated .form-input-updated input {
-  font-size: 17px;
-  line-height: 50px;
-  font-size: 23px;
-  border: solid 2px var(--black);
-  border-radius: 8px;
-  color: var(--heading);
-  background: transparent;
-  color: var(--black);
-  padding-left: 20px;
-  margin-right: 10px;
-}
-
-.contact-form-updated .form-input-updated input::placeholder {
-  font-size: 17px;
-  font-weight: 300;
+  margin-top: 30px;
 }
 
 /*=======================================================================
@@ -2756,4 +2738,110 @@ h6 {
 }
 .fancy-feature-twelve .row [class*="col-"] {
   padding: 0 30px;
+}
+
+/*-------------------- Fancy Portfolio Four ---------------------*/
+.fancy-portfolio-four .mix {
+  width: 33.33333%;
+}
+.portfolio-block-two {
+  border-radius: 20px;
+}
+.portfolio-block-two {
+  overflow: hidden;
+  box-shadow: 0 5px 28px 4px #efefef;
+}
+.portfolio-block-two .hover-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--pink);
+  padding: 15px 5px 20px 30px;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  transform: translateY(100%);
+}
+.portfolio-block-two .hover-content h3 a {
+  font-family: "gilroy-bold";
+  font-size: 22px;
+  color: var(--white);
+  position: relative;
+}
+.portfolio-block-two .hover-content h3 a:before {
+  content: "";
+  position: absolute;
+  left: 104%;
+  bottom: 6px;
+  width: 22px;
+  height: 2px;
+  background: var(--white);
+}
+.portfolio-block-two .hover-content h3 a:hover {
+  text-decoration: underline;
+}
+.portfolio-block-two .hover-content .tag {
+  font-size: 15px;
+  margin-top: -5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.portfolio-block-two {
+  img {
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .fancybox {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    border-radius: 50%;
+    background: var(--black);
+    color: var(--white);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    .inner {
+      cursor: pointer;
+    }
+  }
+}
+.portfolio-block-two .fancybox:hover {
+  background: var(--black);
+}
+.portfolio-block-two:hover .fancybox {
+  opacity: 1;
+  transform: translateX(0);
+}
+.portfolio-block-two:hover .hover-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+.portfolio-block-two:hover .img-meta {
+  opacity: 0.85;
+}
+
+.po-control-one button {
+  display: inline-block;
+  line-height: 48px;
+  border-radius: 8px;
+  padding: 0 33px;
+  margin: 0 0.9%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.po-control-one li.react-tabs__tab.react-tabs__tab--selected button {
+  background: var(--black);
+  color: var(--white);
+}
+
+.mixitUp-container.gutter-space-one .mix {
+  padding: 0 25px;
+  margin-bottom: 50px;
 }

@@ -70,10 +70,10 @@ const HeaderLandingDark = () => {
                     className="navbar-nav  main-side-nav font-gordita"
                     items={[
                       "home",
-                      "about",
                       "why",
-                      "ride",
-                      "earn",
+                      "items",
+                      "about",
+                      "how-it-works",
                       "Insurance",
                     ]}
                     currentClassName="active"
@@ -84,23 +84,23 @@ const HeaderLandingDark = () => {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="#about" className="nav-link">
-                        About
-                      </a>
-                    </li>
-                    <li className="nav-item">
                       <a href="#why" className="nav-link">
                         Why
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="#ride" className="nav-link">
-                        Ride
+                      <a href="#items" className="nav-link">
+                        items
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="#earn" className="nav-link">
-                        Earn
+                      <a href="#about" className="nav-link">
+                        About
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a href="#how-it-works" className="nav-link">
+                        How it works
                       </a>
                     </li>
 
@@ -116,7 +116,7 @@ const HeaderLandingDark = () => {
           </nav>
           <div className="right-widget">
             <button className="demo-button" onClick={toggleModalOne}>
-              <span>List item</span>
+              <span>Start now</span>
               <img src={plus} alt="icon" />
             </button>
           </div>
@@ -137,7 +137,7 @@ const HeaderLandingDark = () => {
 
         <Scrollspy
           className="navbar-nav  "
-          items={["home", "about", "why", "ride", "earn", "Insurance"]}
+          items={["home", "why", "items", "about", "how-it-works", "Insurance"]}
           currentClassName="active"
           offset={-90}>
           <li className="nav-item">
@@ -146,26 +146,25 @@ const HeaderLandingDark = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#about" className="nav-link" onClick={handleClick}>
-              About
-            </a>
-          </li>
-          <li className="nav-item">
             <a href="#why" className="nav-link" onClick={handleClick}>
               Why
             </a>
           </li>
           <li className="nav-item">
-            <a href="#ride" className="nav-link" onClick={handleClick}>
-              Ride
+            <a href="#items" className="nav-link" onClick={handleClick}>
+              Items
             </a>
           </li>
           <li className="nav-item">
-            <a href="#earn" className="nav-link" onClick={handleClick}>
-              Earn
+            <a href="#about" className="nav-link" onClick={handleClick}>
+              About
             </a>
           </li>
-
+          <li className="nav-item">
+            <a href="#how-it-works" className="nav-link" onClick={handleClick}>
+              How it works
+            </a>
+          </li>
           <li className="nav-item">
             <a href="#Insurance" className="nav-link" onClick={handleClick}>
               Insurance

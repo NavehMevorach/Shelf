@@ -9,7 +9,7 @@ function About() {
             <div className="col-xl-7 col-lg-11 m-auto">
               <div className="upper-title">About</div>
               <h2>
-                What is <span>Shelf</span>
+                About <span>Us</span>
               </h2>
               <p className="mt-40 md-mt-30">
                 Shelf is an automated peer-to-peer urban-mobility sharing

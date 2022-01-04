@@ -1,73 +1,81 @@
-import React from "react"
-import { useForm } from "react-hook-form"
-import { yupResolver } from "@hookform/resolvers/yup"
-import * as Yup from "yup"
-import firebase from "./../firebase"
+import React, { useState } from "react"
+import Modal from "react-modal"
+import HeaderPopupForm from "./form/HeaderPopupForm"
+import ils from "./../assets/images/assets/ils_19.svg"
+import close from "./../assets/images/icon/close.svg"
+Modal.setAppElement("#root")
 
 function LastCta() {
-  const ref = firebase.firestore().collection("potentialusers")
-  // for validation
-  const validationSchema = Yup.object().shape({
-    email: Yup.string()
-      .required("Email is required")
-      .email("Entered value does not match email format"),
-    sendMessage: Yup.string().required("Please,leave us a message."),
-  })
+  const [isOpen, setIsOpen] = useState(false)
 
-  const formOptions = { resolver: yupResolver(validationSchema) }
-  // get functions to build form with useForm() hook
-  const { register, handleSubmit, formState } = useForm(formOptions)
-  const { errors } = formState
-
-  function onSubmit(data, e) {
-    // display form data on success
-    console.log(data)
-    ref
-      .doc()
-      .set(data)
-      .catch((err) => {
-        console.log(err)
-      })
-    e.target.reset()
+  function toggleModalOne() {
+    setIsOpen(!isOpen)
   }
 
   return (
-    <div className=" mt-150 md-mt-100">
-      <div className="container">
-        <div className="row">
-          <div className="col-xl-8 col-lg-11 m-auto">
-            <div className="title-style-six text-center">
-              <h2>
-                Love our Vision? <br /> <span>Join</span> our Beta
-              </h2>
-            </div>
-            <form
-              className="contact-form-updated mt-30"
-              onSubmit={handleSubmit(onSubmit)}>
-              <div className="form-input-updated">
-                <input
-                  autoComplete="off"
-                  placeholder="Email Address"
-                  name="email"
-                  type="text"
-                  {...register("email")}
-                  className={` ${errors.email ? "is-invalid" : ""}`}
-                />
-                {errors.email && (
-                  <div className="invalid-feedback">
-                    {errors.email?.message}
-                  </div>
-                )}
-                <button className="demo-button">Join</button>
+    <>
+      <div className=" mt-150 md-mt-100">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-8 col-lg-11 m-auto">
+              <div className="title-style-six text-center">
+                <h2>
+                  Love our Vision? <br /> <span>Join</span> our Beta
+                </h2>
               </div>
-            </form>
+
+              <div className="form-input-updated">
+                <button onClick={toggleModalOne} className="demo-button">
+                  Join
+                </button>
+              </div>
+            </div>
+            {/* End .col */}
           </div>
-          {/* End .col */}
+          {/* End .row */}
         </div>
-        {/* End .row */}
+        {/* /.container */}
       </div>
-      {/* /.container */}
-    </div>
+      <Modal
+        isOpen={isOpen}
+        onRequestClose={toggleModalOne}
+        contentLabel="My dialog"
+        className="custom-modal  modal-contact-popup-one dark-style"
+        overlayClassName="custom-overlay"
+        closeTimeoutMS={500}>
+        <div className="box_inner ">
+          <main className="main-body box_inner modal-content clearfix">
+            <button className="close" onClick={toggleModalOne}>
+              <img src={close} alt="close" />
+            </button>
+            {/* End close icon */}
+
+            <div className="left-side">
+              <div className="d-flex flex-column justify-content-between h-100">
+                <div className="row">
+                  <div className="col-xl-10 col-lg-8 m-auto">
+                    <blockquote>
+                      “We’re living in a world where people can become
+                      businesses in 60 seconds”
+                    </blockquote>
+                    <span className="bio">—Brian Chesky</span>
+                  </div>
+                </div>
+                <img src={ils} alt="" className="illustration mt-auto" />
+              </div>
+            </div>
+            {/* /.left-side */}
+
+            <div className="right-side">
+              <h2 className="form-title">List your Item</h2>
+              <HeaderPopupForm />
+            </div>
+            {/*  /.right-side */}
+          </main>
+          {/* /.main-body */}
+        </div>
+      </Modal>
+    </>
   )
 }
 

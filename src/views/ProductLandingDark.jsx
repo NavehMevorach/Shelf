@@ -10,6 +10,7 @@ import LastCta from "../components/LastCta"
 import FooterSection from "../components/FooterSection"
 import Providers from "../components/Providers"
 import About from "../components/About"
+import Items from "../components/Items"
 
 const ProductLandingDark = () => {
   return (
@@ -19,10 +20,11 @@ const ProductLandingDark = () => {
       </Helmet>
       <HeaderLandingDark />
       <Hero />
-      <About />
       <ValuesSection />
+      <Items />
+      <About />
       <UserFlow />
-      <Providers />
+      {/* <Providers /> */}
       {/* <Partnerships /> */}
       <PartnershipsTwo />
       <LastCta />

@@ -5,7 +5,7 @@ import appThree from "./../assets/images/assets/appThree.png"
 
 function UserFlow() {
   return (
-    <div className="fancy-feature-seven" id="ride">
+    <div className="fancy-feature-seven" id="how-it-works">
       <div className="container">
         <div className="block-wrapper">
           <div className="block-style-nine">
