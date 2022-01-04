@@ -37,12 +37,15 @@ function Hero() {
           <div className="col-xl-7 col-lg-10 col-md-9 m-auto">
             <div className="title-style-six text-center mt-25">
               <h2>
-                <span>Micro</span>-Mobility <br />
-                Powered by <span>You</span>
+                Get <span>Whatever</span> you need <br />
+                To your <span>Front door</span>
+                in <span>Two</span> Hours
               </h2>
               <p>
-                Access e-Scooters and Bikes <br />
-                wherever and whenever you need
+                We deliver you everything that you don't have to your front
+                door. <br />
+                Forget about the things you could have had. <br />
+                Now you can get everything you want!
               </p>
               <form
                 className="contact-form-updated mt-30"
