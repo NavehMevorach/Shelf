@@ -8,7 +8,7 @@ function ValuesSection() {
           <div className="title-style-six text-center">
             <h2>
               Unlock the <span>True Potential</span> <br />
-              of <span>Sharing-Economy</span>
+              of Sharing-Economy
             </h2>
           </div>
           {/* End .row */}

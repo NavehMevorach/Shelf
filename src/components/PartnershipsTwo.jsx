@@ -14,7 +14,7 @@ function PartnershipsTwo() {
               <p className="mt-40 md-mt-30">
                 Shelf is working with the finest Insurance companies out there.
                 All items are insured, all uses are insured so you can be always
-                Carefree
+                carefree
               </p>
             </div>
           </div>

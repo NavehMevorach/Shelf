@@ -13,10 +13,9 @@ function About() {
               </h2>
               <p className="mt-40 md-mt-30">
                 Shelf is an on-demand service that lets you access items, tools,
-                and equipment from local businesses, deliver to your door, and
-                collect them when you're done. With just a few taps on your
-                phone, Shelf will deliver the item to your door and, when you're
-                finished with the item, it'll be collected by a Shelf rep.
+                and equipment, delivered to your door, and collect them when
+                you're done. With just a few taps on your phone, you can access
+                infinte product whenever you want and wherever youre.
               </p>
             </div>
           </div>
