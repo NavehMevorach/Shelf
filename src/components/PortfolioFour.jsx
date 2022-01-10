@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 import SimpleReactLightbox from "simple-react-lightbox"
 import { SRLWrapper } from "simple-react-lightbox"
-import img_15 from "./../assets/images/assets/img_15.jpg"
+import img_15 from "./../assets/images/assets/img_15.png"
 import img_16 from "./../assets/images/assets/img_16.jpg"
 import img_17 from "./../assets/images/assets/img_17.jpg"
 import img_20 from "./../assets/images/assets/img_20.jpg"
@@ -18,37 +18,37 @@ const TabListContent = [
 
 const Entertainment = [
   {
-    img: img_20,
+    img: img_15,
     title: "The Gang Blue",
     meta: "Development, Design",
     dalayAnimation: "",
   },
   {
-    img: img_20,
+    img: img_15,
     title: "Core WordPress",
     meta: "Development, Plugin",
     dalayAnimation: "100",
   },
   {
-    img: img_20,
+    img: img_15,
     title: "Platform Audit",
     meta: "Development, Branding",
     dalayAnimation: "200",
   },
   {
-    img: img_20,
+    img: img_15,
     title: "Medieval origins",
     meta: "Development, Design",
     dalayAnimation: "0",
   },
   {
-    img: img_20,
+    img: img_15,
     title: "Designer’s Checklist",
     meta: "Development, Plugin",
     dalayAnimation: "100",
   },
   {
-    img: img_20,
+    img: img_15,
     title: "Motivation defining Moment",
     meta: "Development, Design",
     dalayAnimation: "200",
