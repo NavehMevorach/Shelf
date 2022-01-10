@@ -6,21 +6,18 @@ import time from "./../assets/images/icon/time-history.svg"
 const FeatureContent = [
   {
     icon: time,
-    title: "On Demand Mobility",
+    title: "Access More, Pay Less.",
     subTitle: `Get access to what you need for a fraction of the price. `,
-    hoverText: `Bring all team slit managment task quis togather.`,
   },
   {
     icon: wallet,
-    title: "Earn Frictionlessly",
-    subTitle: `Make passive income simply by providing items to the platform`,
-    hoverText: `  Bring all team slit managment task quis togather.`,
+    title: "Save Storage Area.",
+    subTitle: `Keep you home clean from unused items.`,
   },
   {
     icon: globe,
-    title: "Ride with Pride ",
+    title: "Save the Planet.",
     subTitle: `Use the world inventory in a sustainable way. `,
-    hoverText: `  Bring all team slit managment task quis togather.`,
   },
 ]
 

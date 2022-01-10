@@ -22,19 +22,16 @@ function Hero() {
             <div className="col-xl-7 col-lg-10 col-md-9 m-auto">
               <div className="title-style-six text-center mt-25">
                 <h2>
-                  Rent <span>Anything</span>
-                  <br />
-                  To Your Doorstep <br />
-                  Under <span>Two</span> Hours
+                  Replacing Shopping <br /> With <span>Access.</span>
                 </h2>
                 <p>
-                  We will deliver everything you need <br />
-                  whenever and wherever you want <br />
-                  and pick it up when you're done.
+                  A new way of thinking about 'stuff' - instead of physical
+                  ownership, <br /> we provide instant access to what you need
+                  when you need it.
                 </p>
                 <div className="form-input-updated">
                   <button onClick={toggleModalOne} className="demo-button">
-                    Start now
+                    Try it now
                   </button>
                 </div>
               </div>

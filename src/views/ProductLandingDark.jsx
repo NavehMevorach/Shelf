@@ -20,9 +20,9 @@ const ProductLandingDark = () => {
       </Helmet>
       <HeaderLandingDark />
       <Hero />
+      <About />
       <ValuesSection />
       <Items />
-      {/* <About /> */}
       {/* <UserFlow /> */}
       <Providers />
       {/* <Partnerships /> */}
