@@ -1,47 +1,36 @@
 import React from "react"
-import plus from "./../assets/images/icon/plus.svg"
-import coin from "./../assets/images/icon/coin.svg"
-import laughing from "./../assets/images/icon/laughing.svg"
 
 const FeatureContent = [
   {
-    icon: plus,
-    title: "Add",
-    subTitle: `Become an item provider by adding an item to the platform`,
-    hoverText: `Bring all team slit managment task quis togather.`,
+    icon: "1",
+    title: "You Choose",
+    subTitle: `Use our app to select an item to rent.`,
   },
   {
-    icon: coin,
-    title: "Earn",
-    subTitle: `Start earning fees from ongoing transactions. It’s simple as that`,
-    hoverText: `  Bring all team slit managment task quis togather.`,
+    icon: "2",
+    title: "We Provide",
+    subTitle: `We will deliver it to you wherever your'e, under Two Hours`,
   },
   {
-    icon: laughing,
-    title: "Rest",
-    subTitle: `With our item management suite, you don't need to do a thing`,
-    hoverText: `  Bring all team slit managment task quis togather.`,
+    icon: "3",
+    title: "And We Pick it Up",
+    subTitle: `We will come pick it up
+    when you finish using it `,
   },
 ]
 function Providers() {
   return (
     <div
-      className="fancy-feature-twelve  lg-container pt-80 md-mt-150 md-pt-100"
-      id="earn">
+      className="fancy-feature-twelve lg-container pt-80 md-mt-150 md-pt-100"
+      id="how-it-works">
       <div className="container">
         <div className="title-style-six text-center md-mb-20">
           <div className="row">
             <div className="col-xl-10 col-lg-11 m-auto">
-              <div className="upper-title">Providers</div>
+              <div className="upper-title">How it works</div>
               <h2>
-                Becoming an item provider <br />
-                and <span>Earn</span> Money <span>Effortlessly</span>
+                Renting Made <span>Easy.</span>
               </h2>
-              <p className="mt-40 md-mt-30">
-                Join the community-driven mobility revolution by listing an item
-                to the shelf app and start earning fees, with just three easy
-                steps!
-              </p>
             </div>
           </div>
         </div>
@@ -50,7 +39,7 @@ function Providers() {
             <div className="col-lg-4 col-md-6" key={i}>
               <div className="block-style-seventeen mt-40">
                 <div className="icon d-flex align-items-center justify-content-center">
-                  <img src={val.icon} alt="icon" />
+                  <p className="static-text">{val.icon} </p>
                 </div>
                 <div className="static-text">
                   <h3>{val.title}</h3>

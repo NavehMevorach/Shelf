@@ -4,6 +4,9 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 import SimpleReactLightbox from "simple-react-lightbox"
 import { SRLWrapper } from "simple-react-lightbox"
 import img_15 from "./../assets/images/assets/img_15.jpg"
+import img_16 from "./../assets/images/assets/img_16.jpg"
+import img_17 from "./../assets/images/assets/img_17.jpg"
+import img_20 from "./../assets/images/assets/img_20.jpg"
 
 const TabListContent = [
   "Entertainment",
@@ -15,42 +18,43 @@ const TabListContent = [
 
 const Entertainment = [
   {
-    img: "img_15",
+    img: img_20,
     title: "The Gang Blue",
     meta: "Development, Design",
     dalayAnimation: "",
   },
   {
-    img: "img_16",
+    img: img_20,
     title: "Core WordPress",
     meta: "Development, Plugin",
     dalayAnimation: "100",
   },
   {
-    img: "img_17",
+    img: img_20,
     title: "Platform Audit",
     meta: "Development, Branding",
     dalayAnimation: "200",
   },
   {
-    img: "img_18",
+    img: img_20,
     title: "Medieval origins",
     meta: "Development, Design",
     dalayAnimation: "0",
   },
   {
-    img: "img_19",
+    img: img_20,
     title: "Designer’s Checklist",
     meta: "Development, Plugin",
     dalayAnimation: "100",
   },
   {
-    img: "img_20",
+    img: img_20,
     title: "Motivation defining Moment",
     meta: "Development, Design",
     dalayAnimation: "200",
   },
 ]
+
 const Kitchen = [
   {
     img: "img_16",
@@ -170,7 +174,7 @@ const PortfolioFour = () => {
                   <div className="portfolio-block-two position-relative">
                     <div className="d-flex align-items-center justify-content-center">
                       <img
-                        src={img_15}
+                        src={item.img}
                         alt={item.meta}
                         className="w-100 h-100 tran4s img-meta"
                       />

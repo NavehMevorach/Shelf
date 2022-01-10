@@ -22,9 +22,9 @@ const ProductLandingDark = () => {
       <Hero />
       <ValuesSection />
       <Items />
-      <About />
-      <UserFlow />
-      {/* <Providers /> */}
+      {/* <About /> */}
+      {/* <UserFlow /> */}
+      <Providers />
       {/* <Partnerships /> */}
       <PartnershipsTwo />
       <LastCta />

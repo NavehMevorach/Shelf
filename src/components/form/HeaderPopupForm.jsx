@@ -1,12 +1,18 @@
-import React from "react"
+import React, { useState } from "react"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as Yup from "yup"
 import firebase from "./../../firebase"
+import Checkbox from "./Checkbox"
+
+const options = ["aaaa", "bbbb", "cccc", "dddd"]
 
 const HeaderPopupForm = () => {
   const ref = firebase.firestore().collection("potentialProviders")
-
+  const [checkedState, setCheckedState] = useState(
+    new Array(options.length).fill(false)
+  )
+  const [isSent, setIsSent] = useState(false)
   // for validation
   const validationSchema = Yup.object().shape({
     name: Yup.string().required(" Name is required"),
@@ -22,6 +28,8 @@ const HeaderPopupForm = () => {
 
   function onSubmit(data, e) {
     // display form data on success
+    const items = options.filter((_, i) => checkedState[i])
+    data["items"] = [...items]
     console.log(data)
     ref
       .doc()
@@ -30,6 +38,18 @@ const HeaderPopupForm = () => {
         console.log(err)
       })
     e.target.reset()
+    setCheckedState(new Array(options.length).fill(false))
+    setIsSent(true)
+    setTimeout(() => {
+      setIsSent(false)
+    }, 2000)
+  }
+
+  const handleOnChange = (position) => {
+    const updatedCheckedState = checkedState.map((item, index) =>
+      index === position ? !item : item
+    )
+    setCheckedState(updatedCheckedState)
   }
 
   return (
@@ -74,26 +94,22 @@ const HeaderPopupForm = () => {
           </div>
         </div>
         {/* End .col */}
-
-        <div className="col-12">
-          <div className="input-group-meta form-group mb-30">
-            <label>Escooter / Ebike / Bike</label>
-            <input
-              autoComplete="off"
-              type="text"
-              placeholder="Your Model"
-              name="model"
-              {...register("name")}
-              className={`${errors.name ? "is-invalid" : ""}`}
+        <div className="col-12 grid-checkbox">
+          {options.map((val, i) => (
+            <Checkbox
+              key={i}
+              index={i}
+              name={val}
+              isChecked={checkedState[i]}
+              handleCheckboxChange={handleOnChange}
             />
-            {errors.model && (
-              <div className="invalid-feedback">{errors.model?.message}</div>
-            )}
-          </div>
+          ))}
         </div>
 
         <div className="col-12">
-          <button className="theme-btn-seven demo-button w-100">Send</button>
+          <button className="theme-btn-seven demo-button w-100">
+            {isSent ? "Thanks!" : "Send"}
+          </button>
         </div>
       </div>
     </form>
