@@ -5,12 +5,12 @@ import time from "./../assets/images/icon/time-history.svg"
 
 const FeatureContent = [
   {
-    icon: time,
+    icon: wallet,
     title: "Access More, Pay Less.",
     subTitle: `Get access to what you need for a fraction of the price. `,
   },
   {
-    icon: wallet,
+    icon: time,
     title: "Save Storage Area.",
     subTitle: `Keep you home clean from unused items.`,
   },
