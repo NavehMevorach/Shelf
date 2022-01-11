@@ -65,7 +65,7 @@ function Hero() {
                     <span className="bio">—Brian Chesky</span>
                   </div>
                 </div>
-                <img src={ils} alt="" className="illustration mt-auto" />
+                {/* <img src={ils} alt="" className="illustration mt-auto" /> */}
               </div>
             </div>
             {/* /.left-side */}

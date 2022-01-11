@@ -193,19 +193,20 @@ const HeaderLandingDark = () => {
                 <div className="row">
                   <div className="col-xl-10 col-lg-8 m-auto">
                     <blockquote>
-                      “We’re living in a world where people can become
-                      businesses in 60 seconds”
+                      “I think our obsession with ownership is at a tipping
+                      point and the sharing economy is part of the antidote for
+                      that.””
                     </blockquote>
-                    <span className="bio">—Brian Chesky</span>
+                    <span className="bio">—Richard Branson</span>
                   </div>
                 </div>
-                <img src={ils} alt="" className="illustration mt-auto" />
+                {/* <img src={ils} alt="" className="illustration mt-auto" /> */}
               </div>
             </div>
             {/* /.left-side */}
 
             <div className="right-side">
-              <h2 className="form-title">List your Item</h2>
+              <h2 className="form-title">Start Access More</h2>
               <HeaderPopupForm />
             </div>
             {/*  /.right-side */}

@@ -5,7 +5,34 @@ import * as Yup from "yup"
 import firebase from "./../../firebase"
 import Checkbox from "./Checkbox"
 
-const options = ["aaaa", "bbbb", "cccc", "dddd"]
+const options = [
+  "Vacuum Cleaner",
+  "Projector",
+  "Board Games",
+  "Gaming Console",
+  "Hardware tools",
+  "Driller",
+  "Camera",
+  "Go-pro",
+  "Hiking Gear",
+  "Camping Gear",
+  "E-scooter",
+  "E-bike",
+  "Drone",
+  "Recording equipment",
+  "Party equipment",
+  "Cocktails Kit",
+  "Furniture (Sofa, Dishwasher, Bed etc.)",
+  "Surfboard",
+  "Sport equipment",
+  "Evening dresses / suits",
+  "jewelry / watches (Luxury)",
+  "Lawn mower",
+  "Accommodation kits",
+  "Ladder",
+  "Coffe machine",
+  "Other",
+]
 
 const HeaderPopupForm = () => {
   const ref = firebase.firestore().collection("potentialProviders")
@@ -95,6 +122,10 @@ const HeaderPopupForm = () => {
         </div>
         {/* End .col */}
         <div className="col-12 grid-checkbox">
+          <h6>
+            <strong>What kind of items are you intrested at?</strong>
+          </h6>
+
           {options.map((val, i) => (
             <Checkbox
               key={i}

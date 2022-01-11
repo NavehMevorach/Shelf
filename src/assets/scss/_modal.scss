@@ -1,5 +1,8 @@
 // Modal css\
-
+.ReactModal__Html--open,
+.ReactModal__Body--open {
+  overflow: hidden; /* prevents background page from scrolling when the modal is open */
+}
 .custom-overlay {
   position: fixed;
   top: 0;
@@ -19,8 +22,11 @@
   transform: translate(-50%, -50%);
   background: #fff;
   overflow: initial;
-  border-radius: 30px;
+  border-radius: 3px;
   outline: none;
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
   .box_inner {
     width: 1330px;
     overflow-y: auto;

@@ -1662,7 +1662,7 @@ h6 {
 }
 .modal-contact-popup-one .main-body {
   background: var(--black);
-  border-radius: 30px;
+  border-radius: 3px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -1686,20 +1686,15 @@ h6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
-  background: #fde3c5;
+  background: var(--pink);
   text-align: center;
   padding: 50px 0 0;
 }
 .dark-style.modal-contact-popup-one .main-body .left-side {
-  background: linear-gradient(
-    319.09deg,
-    #f2a530 15.78%,
-    #ed5879 48.89%,
-    #b439ff 81.59%
-  );
+  background: var(--pink);
 }
 .dark-style.modal-contact-popup-one .main-body .left-side blockquote,
-.dark-style.modal-contact-popup-one .main-body .left-side .bio {
+.bio {
   color: var(--black);
 }
 .modal-contact-popup-one .main-body .left-side blockquote {
@@ -2842,9 +2837,9 @@ h6 {
 
 .grid-checkbox {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   grid-gap: 24px;
-  margin-bottom: 20px;
+  margin: 30px 0;
 }
 
 .checkbox {
