@@ -15,8 +15,8 @@ function About() {
                 Shelf is an on-demand service that lets you access items, tools,
                 and equipment, which are delivered to your door, and collect
                 them when you're done. With just a few taps on your phone, you
-                can access infinite products whenever you want and wherever
-                you're.
+                can access infinite products whenever you want and wherever you
+                are.
               </p>
             </div>
           </div>
