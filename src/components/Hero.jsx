@@ -7,7 +7,7 @@ import HeaderPopupForm from "./form/HeaderPopupForm"
 import close from "./../assets/images/icon/close.svg"
 
 const data =
-  "Hi! we know you're used for a catchy slogan, but we thought to be straitgorward and tell you about shelf without unnecessary Bullshit. Shelf is a changing the way we thinking about stuff. instead of physical ownership, we provide instant access to what you need when you need it. If that cought you attention we would love to hear from you and if you want to read more you're more than welcome to scroll down. See ya!"
+  "Hi! we know you're used for a catchy slogan, but we thought to be straitgorward and tell you about shelf without unnecessary Bullshit. Shelf is an on-demand service that lets you access items, tools, and equipment, which are delivered to your door, and collect them when you're done. With just a few taps on your phone, you can access infinite products whenever you want and wherever you are. If you want to check out if the service is avaible in your area go you can click on the button which should appear on the screen right now."
 
 Modal.setAppElement("#root")
 
