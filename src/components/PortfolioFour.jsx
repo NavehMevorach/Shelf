@@ -1,12 +1,7 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 import SimpleReactLightbox from "simple-react-lightbox"
 import { SRLWrapper } from "simple-react-lightbox"
-import img_15 from "./../assets/images/assets/img_15.png"
-import img_16 from "./../assets/images/assets/img_16.jpg"
-import img_17 from "./../assets/images/assets/img_17.jpg"
-import img_20 from "./../assets/images/assets/img_20.jpg"
 
 const TabListContent = [
   "Entertainment",
@@ -14,36 +9,32 @@ const TabListContent = [
   "Party",
   "Music",
   "Photography",
+  "Utilities",
 ]
 
 const Entertainment = [
   {
-    img: img_15,
-    title: "The Gang Blue",
+    title: "Board Games",
     meta: "Development, Design",
     dalayAnimation: "",
   },
   {
-    img: img_15,
-    title: "Core WordPress",
+    title: "Game Console",
     meta: "Development, Plugin",
     dalayAnimation: "100",
   },
   {
-    img: img_15,
-    title: "Platform Audit",
+    title: "VR Set",
     meta: "Development, Branding",
     dalayAnimation: "200",
   },
   {
-    img: img_15,
-    title: "Medieval origins",
+    title: "Projector",
     meta: "Development, Design",
     dalayAnimation: "0",
   },
   {
-    img: img_15,
-    title: "Designer’s Checklist",
+    title: "Something",
     meta: "Development, Plugin",
     dalayAnimation: "100",
   },
@@ -51,20 +42,27 @@ const Entertainment = [
 
 const Kitchen = [
   {
-    img: "img_16",
-    title: "Core WordPress",
+    title: "Mixer",
     meta: "Development, Plugin",
     dalayAnimation: "100",
   },
   {
-    img: "img_18",
-    title: "Medieval origins",
+    title: "Blender",
     meta: "Development, Design",
     dalayAnimation: "0",
   },
   {
-    img: "img_22",
-    title: "Lets catch amd",
+    title: "Rice maker",
+    meta: "Development, Design",
+    dalayAnimation: "100",
+  },
+  {
+    title: "Waffle Maker",
+    meta: "Development, Design",
+    dalayAnimation: "100",
+  },
+  {
+    title: "Pancake Maker",
     meta: "Development, Design",
     dalayAnimation: "100",
   },
@@ -72,26 +70,22 @@ const Kitchen = [
 
 const Party = [
   {
-    img: "img_17",
-    title: "Platform Audit",
+    title: "Cocktail kit",
     meta: "Development, Branding",
     dalayAnimation: "200",
   },
   {
-    img: "img_19",
-    title: "Designer’s Checklist",
+    title: "Party games kit",
     meta: "Development, Plugin",
     dalayAnimation: "100",
   },
   {
-    img: "img_21",
-    title: "Experience WordCamp",
+    title: "Party Decoration",
     meta: "Development, Design",
     dalayAnimation: "0",
   },
   {
-    img: "img_23",
-    title: "Experience WordCamp",
+    title: "Chairs",
     meta: "Development, Branding",
     dalayAnimation: "200",
   },
@@ -99,21 +93,18 @@ const Party = [
 
 const Music = [
   {
-    img: "img_15",
-    title: "The Gang Blue",
+    title: "Recording Equipment",
     meta: "Development, Design",
     dalayAnimation: "",
   },
   {
-    img: "img_18",
-    title: "Medieval origins",
+    title: "Mixer",
     meta: "Development, Design",
     dalayAnimation: "0",
   },
 
   {
-    img: "img_20",
-    title: "Motivation defining Moment",
+    title: "Instruments",
     meta: "Development, Design",
     dalayAnimation: "200",
   },
@@ -121,20 +112,39 @@ const Music = [
 
 const Photography = [
   {
-    img: "img_16",
-    title: "Core WordPress",
+    title: "Professinal Camera",
     meta: "Development, Plugin",
     dalayAnimation: "100",
   },
   {
-    img: "img_17",
-    title: "Platform Audit",
+    title: "Go-pro",
     meta: "Development, Branding",
     dalayAnimation: "200",
   },
   {
-    img: "img_21",
-    title: "Experience WordCamp",
+    title: "Video Camera",
+    meta: "Development, Design",
+    dalayAnimation: "0",
+  },
+  {
+    title: "Tripods",
+    meta: "Development, Design",
+    dalayAnimation: "0",
+  },
+]
+const Utilities = [
+  {
+    title: "Snow Blower",
+    meta: "Development, Plugin",
+    dalayAnimation: "100",
+  },
+  {
+    title: "Lawn Mower",
+    meta: "Development, Branding",
+    dalayAnimation: "200",
+  },
+  {
+    title: "Ladder",
     meta: "Development, Design",
     dalayAnimation: "0",
   },
@@ -165,24 +175,10 @@ const PortfolioFour = () => {
                   key={i}
                   data-aos="fade-right"
                   data-aos-delay={item.dalayAnimation}>
-                  <div className="portfolio-block-two position-relative">
-                    <div className="d-flex align-items-center justify-content-center">
-                      <img
-                        src={item.img}
-                        alt={item.meta}
-                        className="w-100 h-100 tran4s img-meta"
-                      />
-                      <div className="fancybox">
-                        <i className="fa fa-arrows-alt" aria-hidden="true"></i>
-                      </div>
+                  <div className="block-style-seventeen block-style-seventeen--items">
+                    <div className="static-text">
+                      <h3>{item.title}</h3>
                     </div>
-                    <div className="hover-content">
-                      <h3>
-                        <Link to="/portfolio-details-v1">{item.title}</Link>
-                      </h3>
-                      <div className="tag">{item.meta}</div>
-                    </div>
-                    {/* /.hover-content */}
                   </div>
                   {/* /.portfolio-block-two */}
                 </div>
@@ -191,132 +187,99 @@ const PortfolioFour = () => {
             {/* single mixitUp-container */}
           </TabPanel>
           <TabPanel>
-            <div className="mixitUp-container gutter-space-one d-flex flex-wrap">
+            <div className="mixitUp-container  gutter-space-one d-flex flex-wrap">
               {Kitchen.map((item, i) => (
                 <div
-                  className={`mix ${item.imgClass}`}
+                  className="mix"
                   key={i}
                   data-aos="fade-right"
                   data-aos-delay={item.dalayAnimation}>
-                  <div className="portfolio-block-two position-relative">
-                    <div className="d-flex align-items-center justify-content-center">
-                      <img
-                        src={img_15}
-                        alt={item.meta}
-                        className="w-100 h-100 tran4s img-meta"
-                      />
-                      <div className="fancybox">
-                        <i className="fa fa-arrows-alt" aria-hidden="true"></i>
-                      </div>
+                  <div className="block-style-seventeen block-style-seventeen--items">
+                    <div className="static-text">
+                      <h3>{item.title}</h3>
                     </div>
-                    <div className="hover-content">
-                      <h3>
-                        <Link to="/portfolio-details-v1">{item.title}</Link>
-                      </h3>
-                      <div className="tag">{item.meta}</div>
-                    </div>
-                    {/* /.hover-content */}
                   </div>
                   {/* /.portfolio-block-two */}
                 </div>
               ))}
             </div>
+            {/* single mixitUp-container */}
           </TabPanel>
           <TabPanel>
-            <div className="mixitUp-container gutter-space-one d-flex flex-wrap">
+            <div className="mixitUp-container  gutter-space-one d-flex flex-wrap">
               {Party.map((item, i) => (
                 <div
-                  className={`mix ${item.imgClass}`}
+                  className="mix"
                   key={i}
                   data-aos="fade-right"
                   data-aos-delay={item.dalayAnimation}>
-                  <div className="portfolio-block-two position-relative">
-                    <div className="d-flex align-items-center justify-content-center">
-                      <img
-                        src={img_15}
-                        alt={item.meta}
-                        className="w-100 h-100 tran4s img-meta"
-                      />
-                      <div className="fancybox">
-                        <i className="fa fa-arrows-alt" aria-hidden="true"></i>
-                      </div>
+                  <div className="block-style-seventeen block-style-seventeen--items">
+                    <div className="static-text">
+                      <h3>{item.title}</h3>
                     </div>
-                    <div className="hover-content">
-                      <h3>
-                        <Link to="/portfolio-details-v1">{item.title}</Link>
-                      </h3>
-                      <div className="tag">{item.meta}</div>
-                    </div>
-                    {/* /.hover-content */}
                   </div>
                   {/* /.portfolio-block-two */}
                 </div>
               ))}
             </div>
+            {/* single mixitUp-container */}
           </TabPanel>
           <TabPanel>
-            <div className="mixitUp-container gutter-space-one d-flex flex-wrap">
+            <div className="mixitUp-container  gutter-space-one d-flex flex-wrap">
               {Music.map((item, i) => (
                 <div
-                  className={`mix ${item.imgClass}`}
+                  className="mix"
                   key={i}
                   data-aos="fade-right"
                   data-aos-delay={item.dalayAnimation}>
-                  <div className="portfolio-block-two position-relative">
-                    <div className="d-flex align-items-center justify-content-center">
-                      <img
-                        src={img_15}
-                        alt={item.meta}
-                        className="w-100 h-100 tran4s img-meta"
-                      />
-                      <div className="fancybox">
-                        <i className="fa fa-arrows-alt" aria-hidden="true"></i>
-                      </div>
+                  <div className="block-style-seventeen block-style-seventeen--items">
+                    <div className="static-text">
+                      <h3>{item.title}</h3>
                     </div>
-                    <div className="hover-content">
-                      <h3>
-                        <Link to="/portfolio-details-v1">{item.title}</Link>
-                      </h3>
-                      <div className="tag">{item.meta}</div>
-                    </div>
-                    {/* /.hover-content */}
                   </div>
                   {/* /.portfolio-block-two */}
                 </div>
               ))}
             </div>
+            {/* single mixitUp-container */}
           </TabPanel>
           <TabPanel>
-            <div className="mixitUp-container gutter-space-one d-flex flex-wrap">
+            <div className="mixitUp-container  gutter-space-one d-flex flex-wrap">
               {Photography.map((item, i) => (
                 <div
-                  className={`mix ${item.imgClass}`}
+                  className="mix"
                   key={i}
                   data-aos="fade-right"
                   data-aos-delay={item.dalayAnimation}>
-                  <div className="portfolio-block-two position-relative">
-                    <div className="d-flex align-items-center justify-content-center">
-                      <img
-                        src={img_15}
-                        alt={item.meta}
-                        className="w-100 h-100 tran4s img-meta"
-                      />
-                      <div className="fancybox">
-                        <i className="fa fa-arrows-alt" aria-hidden="true"></i>
-                      </div>
+                  <div className="block-style-seventeen block-style-seventeen--items">
+                    <div className="static-text">
+                      <h3>{item.title}</h3>
                     </div>
-                    <div className="hover-content">
-                      <h3>
-                        <Link to="/portfolio-details-v1">{item.title}</Link>
-                      </h3>
-                      <div className="tag">{item.meta}</div>
-                    </div>
-                    {/* /.hover-content */}
                   </div>
                   {/* /.portfolio-block-two */}
                 </div>
               ))}
             </div>
+            {/* single mixitUp-container */}
+          </TabPanel>
+          <TabPanel>
+            <div className="mixitUp-container  gutter-space-one d-flex flex-wrap">
+              {Utilities.map((item, i) => (
+                <div
+                  className="mix"
+                  key={i}
+                  data-aos="fade-right"
+                  data-aos-delay={item.dalayAnimation}>
+                  <div className="block-style-seventeen block-style-seventeen--items">
+                    <div className="static-text">
+                      <h3>{item.title}</h3>
+                    </div>
+                  </div>
+                  {/* /.portfolio-block-two */}
+                </div>
+              ))}
+            </div>
+            {/* single mixitUp-container */}
           </TabPanel>
         </SRLWrapper>
       </Tabs>
@@ -325,3 +288,36 @@ const PortfolioFour = () => {
 }
 
 export default PortfolioFour
+
+// <TabPanel>
+// <div className="mixitUp-container gutter-space-one d-flex flex-wrap">
+//   {Photography.map((item, i) => (
+//     <div
+//       className={`mix ${item.imgClass}`}
+//       key={i}
+//       data-aos="fade-right"
+//       data-aos-delay={item.dalayAnimation}>
+//       <div className="portfolio-block-two position-relative">
+//         <div className="d-flex align-items-center justify-content-center">
+//           <img
+//             src={img_15}
+//             alt={item.meta}
+//             className="w-100 h-100 tran4s img-meta"
+//           />
+//           <div className="fancybox">
+//             <i className="fa fa-arrows-alt" aria-hidden="true"></i>
+//           </div>
+//         </div>
+//         <div className="hover-content">
+//           <h3>
+//             <Link to="/portfolio-details-v1">{item.title}</Link>
+//           </h3>
+//           <div className="tag">{item.meta}</div>
+//         </div>
+//         {/* /.hover-content */}
+//       </div>
+//       {/* /.portfolio-block-two */}
+//     </div>
+//   ))}
+// </div>
+// </TabPanel>

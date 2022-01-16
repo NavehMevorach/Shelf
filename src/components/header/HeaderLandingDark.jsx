@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 import Modal from "react-modal"
 import HeaderPopupForm from "../form/HeaderPopupForm"
 import logo from "./../../assets/images/logo.svg"
-import ils from "./../../assets/images/assets/ils_19.svg"
 import close from "./../../assets/images/icon/close.svg"
 import plus from "./../../assets/images/icon/plus.svg"
 

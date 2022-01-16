@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import Modal from "react-modal"
 import HeaderPopupForm from "./form/HeaderPopupForm"
-import ils from "./../assets/images/assets/ils_19.svg"
 import close from "./../assets/images/icon/close.svg"
 Modal.setAppElement("#root")
 
