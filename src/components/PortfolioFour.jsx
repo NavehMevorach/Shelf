@@ -47,12 +47,6 @@ const Entertainment = [
     meta: "Development, Plugin",
     dalayAnimation: "100",
   },
-  {
-    img: img_15,
-    title: "Motivation defining Moment",
-    meta: "Development, Design",
-    dalayAnimation: "200",
-  },
 ]
 
 const Kitchen = [
