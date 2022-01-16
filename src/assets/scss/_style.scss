@@ -1,19 +1,22 @@
 /*------------- Global Prefix -------------------*/
 :root {
   --pink: rgb(255, 0, 131);
+  --green: #204b45;
+  --green-light: #37c89a;
   --black: #000;
   --white: #fff;
   --text-color: #73737b;
   --text-light: #888888;
   --heading: #101621;
   --blue-dark: #6f55ff;
+  --green-light: #37c89a;
   --red-light: #fd6a5e;
   --yellow-deep: #ffb840;
   --blue-light: #3bb0d7;
   --purple-blue: #655c97;
   --vin-red: #973c56;
   --dark-bg: var(--white);
-  // --pink: #ff2759;
+  // --green-light: #ff2759;
 
   scroll-behavior: smooth;
 }
@@ -25,12 +28,13 @@
   background: var(--white);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--pink);
+  background: var(--green-light);
   border-radius: 0;
 }
 
 ::selection {
   background-color: var(--blue-dark);
+  // background-color: var(--green-light);
   color: var(--white);
 }
 body {
@@ -46,10 +50,10 @@ body {
   .mobile-menu {
     // background: #17192b;
     background: var(--white);
-    border-right: 1px solid var(--black);
+    border-right: 1px solid var(--green);
   }
   .mobile-menu .nav-item .nav-link::before {
-    background: var(--black);
+    background: var(--green);
   }
 }
 
@@ -141,7 +145,7 @@ h6 {
 }
 .dark-style {
   background: var(--dark-bg);
-  color: var(--black);
+  color: var(--green);
 }
 .dark-style .h1,
 .dark-style h1,
@@ -155,10 +159,14 @@ h6 {
 .dark-style h5,
 .dark-style .h6,
 .dark-style h6 {
-  color: var(--black);
+  color: var(--green);
 }
 .gr-bg-one {
-  background: linear-gradient(90.6deg, var(--pink) 2.93%, #f57c35 99.47%);
+  background: linear-gradient(
+    90.6deg,
+    var(--green-light) 2.93%,
+    #f57c35 99.47%
+  );
 }
 .hover-reverse-gr-bg-one {
   position: relative;
@@ -184,7 +192,7 @@ h6 {
   border-top: 1px solid #efefef;
 }
 .bottom-border {
-  border-bottom: 1px solid var(--pink);
+  border-bottom: 1px solid var(--green-light);
 }
 
 /*==================== Click Top ====================*/
@@ -197,11 +205,11 @@ h6 {
   right: 5px;
   z-index: 99;
   text-align: center;
-  color: var(--black);
+  color: var(--green);
   font-size: 18px;
   cursor: pointer;
   border-radius: 50%;
-  background: var(--black);
+  background: var(--green);
   transition: all 0.3s ease-in-out;
   img {
     margin: auto;
@@ -226,10 +234,10 @@ h6 {
 }
 
 .dark-style .title-style-six h2 {
-  color: var(--black);
+  color: var(--green);
 }
 .title-style-six h2 span {
-  color: var(--pink);
+  color: var(--green-light);
 }
 .title-style-six h6 {
   font-size: 18px;
@@ -245,7 +253,7 @@ h6 {
 }
 .dark-style .title-style-six .text-xs {
   // color: rgba(255, 255, 255, 0.54);
-  color: var(--black);
+  color: var(--green);
 }
 
 /*^^^^^^^^^^^^^^^^^^^^^ Theme Menu ^^^^^^^^^^^^^^^^^^^^^^^^^*/
@@ -304,7 +312,7 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-  background: var(--black);
+  background: var(--green);
   padding: 30px 70px;
   transition: all 0.4s ease-out;
 }
@@ -315,7 +323,7 @@ h6 {
   z-index: 9999;
   padding-top: 0;
   padding-bottom: 0;
-  // background: var(--black);
+  // background: var(--green);
   // background: rgba(72, 87, 118, 0.2);
   background-color: var(--white);
   box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.1);
@@ -330,7 +338,7 @@ h6 {
   bottom: -24px;
   font-size: 14px;
   line-height: 22px;
-  color: var(--black);
+  color: var(--green);
   padding: 0 15px;
   border-radius: 3px;
   background: #dc3545;
@@ -363,7 +371,7 @@ h6 {
   position: relative;
 }
 .provider-nums {
-  color: var(--pink);
+  color: var(--green-light);
   font-size: 45px !important;
   font-style: italic;
   font-weight: bold !important;
@@ -449,7 +457,7 @@ h6 {
 .block-style-nine .text-wrapper h6 {
   font-family: "gordita", sans-serif;
   font-size: 20px;
-  color: var(--pink);
+  color: var(--green-light);
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -525,7 +533,7 @@ h6 {
   transform: translateY(-5px);
 }
 .team-block-one .info {
-  background: var(--black);
+  background: var(--green);
   border-radius: 10px 10px 0 0;
   padding: 32px 45px;
 }
@@ -546,7 +554,7 @@ h6 {
   border-radius: 0 0px 10px 10px;
 }
 .teamSliderOne .team-member .info {
-  background: var(--black);
+  background: var(--green);
   border-radius: 10px 10px 0 0;
   padding: 32px 45px;
 }
@@ -570,7 +578,7 @@ h6 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: var(--black);
+  background: var(--green);
   text-align: center;
   line-height: 50px;
   color: #2a2a2a;
@@ -581,7 +589,7 @@ h6 {
 }
 .team-section-three .slider-arrows li:hover {
   background: var(--blue-light);
-  color: var(--black);
+  color: var(--green);
 }
 
 /*---------------------- Map Area One ----------------*/
@@ -599,7 +607,7 @@ h6 {
   height: 100%;
 }
 .map-area-one .si-content {
-  background: var(--black);
+  background: var(--green);
   padding: 35px 30px 35px 50px;
   border-bottom: 5px solid #33d4b8;
   position: absolute;
@@ -665,7 +673,7 @@ h6 {
 }
 .fancy-text-block-nineteen .text-wrapper p {
   font-size: 24px;
-  color: var(--black);
+  color: var(--green);
   line-height: 1.58em;
   padding-top: 40px;
 }
@@ -756,7 +764,7 @@ h6 {
   padding: 78px 0 150px;
 }
 .faq-section-four.bg-white {
-  background: var(--black);
+  background: var(--green);
 }
 .faq-section-four.bg-white:before,
 .faq-section-four.bg-white:after {
@@ -791,7 +799,7 @@ h6 {
   top: 75%;
 }
 .accordion-style-four .card {
-  background: var(--black);
+  background: var(--green);
   border-radius: 0;
   border: none;
   margin-bottom: 10px;
@@ -893,7 +901,7 @@ h6 {
   top: 8px;
   bottom: 8px;
   background: var(--purple-blue);
-  color: var(--black);
+  color: var(--green);
   font-size: 16px;
   transition: all 0.3s ease-in-out;
 }
@@ -1001,7 +1009,7 @@ h6 {
   position: absolute;
   width: 100px;
   height: 100px;
-  background: var(--black);
+  background: var(--green);
   border-radius: 50%;
   left: 50%;
   top: 50%;
@@ -1090,7 +1098,7 @@ h6 {
 .team-section-four .team-member {
   margin-bottom: 60px;
   text-align: center;
-  background: var(--black);
+  background: var(--green);
   border-radius: 10px;
   overflow: hidden;
   padding-bottom: 30px;
@@ -1126,7 +1134,7 @@ h6 {
   z-index: 1;
   padding: 100px 0 100px;
   &.blog-page-bg {
-    background: linear-gradient(45deg, var(--black) bf2, #edfffd);
+    background: linear-gradient(45deg, var(--green) bf2, #edfffd);
     padding: 180px 0 150px;
     position: relative;
     z-index: 5;
@@ -1249,7 +1257,7 @@ h6 {
 }
 .hero-banner-five .hero-heading span {
   position: relative;
-  color: var(--pink);
+  color: var(--green-light);
   text-decoration: underline;
   text-decoration-thickness: 4px;
 }
@@ -1304,7 +1312,7 @@ h6 {
 }
 .hero-banner-five .button-group a.ios-button {
   background: #111111;
-  color: var(--black);
+  color: var(--green);
 }
 .hero-banner-five .button-group a.ios-button span {
   color: rgba(255, 255, 255, 0.7);
@@ -1411,7 +1419,7 @@ h6 {
 .pricing-nav-three .nav-item .nav-link.active,
 .pricing-nav-three .react-tabs__tab.react-tabs__tab--selected {
   background: var(--white);
-  color: var(--black);
+  color: var(--green);
 }
 .pricing-table-area-four {
   max-width: 1350px;
@@ -1522,7 +1530,7 @@ h6 {
 .pricing-table-area-four .pr-table-wrapper .trial-button:hover,
 .pricing-table-area-four .pr-table-wrapper.active .trial-button {
   background: var(--white);
-  color: var(--black);
+  color: var(--green);
 }
 /*--------------------- Client Feedback Slider Four ---------------*/
 .client-feedback-slider-four {
@@ -1551,7 +1559,7 @@ h6 {
 }
 
 .clientSliderFour .feedback-wrapper {
-  background: var(--black);
+  background: var(--green);
   border-radius: 12px;
   margin: 0 20px;
   padding: 45px 50px 50px 40px;
@@ -1634,9 +1642,9 @@ h6 {
   transition: all 0.3s ease-in-out;
 }
 .theme-footer-five .social-icon li a:hover {
-  background: var(--pink);
-  border-color: var(--pink);
-  color: var(--black);
+  background: var(--green-light);
+  border-color: var(--green-light);
+  color: var(--green);
 }
 .theme-footer-five .email {
   color: var(--white);
@@ -1661,7 +1669,7 @@ h6 {
   padding: 0 15px;
 }
 .modal-contact-popup-one .main-body {
-  background: var(--black);
+  background: var(--green);
   border-radius: 3px;
   overflow: hidden;
   position: relative;
@@ -1686,16 +1694,16 @@ h6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
-  background: var(--pink);
+  background: var(--green-light);
   text-align: center;
   padding: 50px 0 0;
 }
 .dark-style.modal-contact-popup-one .main-body .left-side {
-  background: var(--pink);
+  background: var(--green-light);
 }
 .dark-style.modal-contact-popup-one .main-body .left-side blockquote,
 .bio {
-  color: var(--black);
+  color: var(--green);
 }
 .modal-contact-popup-one .main-body .left-side blockquote {
   font-weight: 500;
@@ -1728,7 +1736,7 @@ h6 {
   padding-bottom: 30px;
 }
 .dark-style.modal-contact-popup-one .main-body .right-side .form-title {
-  color: var(--black);
+  color: var(--green);
 }
 .modal-contact-popup-one .main-body .input-group-meta {
   position: relative;
@@ -1767,8 +1775,8 @@ h6 {
 }
 .dark-style.modal-contact-popup-one .main-body .input-group-meta input,
 .dark-style.modal-contact-popup-one .main-body .input-group-meta textarea {
-  border-color: var(--black);
-  color: var(--black);
+  border-color: var(--green);
+  color: var(--green);
 }
 .modal-contact-popup-one
   .main-body
@@ -1790,17 +1798,17 @@ h6 {
   .input-group-meta
   ::-webkit-input-placeholder {
   /* Edge */
-  color: var(--black);
+  color: var(--green);
 }
 .dark-style.modal-contact-popup-one
   .main-body
   .input-group-meta
   :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: var(--black);
+  color: var(--green);
 }
 .dark-style.modal-contact-popup-one .main-body .input-group-meta ::placeholder {
-  color: var(--black);
+  color: var(--green);
 }
 .dark-style.modal-contact-popup-one .theme-btn-seven {
   font-weight: bold;
@@ -1849,23 +1857,23 @@ h6 {
 }
 
 .dark-style .navbar-nav .nav-item .nav-link {
-  color: rgba(var(--pink), 0.6);
+  color: rgba(var(--green-light), 0.6);
 }
 .dark-style .navbar-nav .nav-item.active .nav-link {
-  color: var(--pink);
+  color: var(--green-light);
 }
 .dark-style .theme-menu-five .navbar-nav .nav-item .nav-link.active {
-  color: var(--pink);
+  color: var(--green-light);
 }
 .demo-button {
-  color: var(--black);
-  border-color: var(--black);
+  color: var(--green);
+  border-color: var(--green);
   transition: all 0.3s ease-in-out;
 }
 
 .demo-button:hover {
-  background-color: var(--pink);
-  border-color: var(--black);
+  background-color: var(--green-light);
+  border-color: var(--green);
   transition: all 0.3s ease-in-out;
 }
 .demo-button:hover:before {
@@ -1879,7 +1887,7 @@ h6 {
 .hero-banner-six .hero-heading {
   font-size: 100px;
   line-height: 115%;
-  color: var(--black);
+  color: var(--green);
 }
 .hero-banner-six .hero-heading span {
   color: #ff275b;
@@ -1895,7 +1903,7 @@ h6 {
   height: 65px;
   padding: 0 5px 0 25px;
   border-radius: 6px;
-  color: var(--black);
+  color: var(--green);
   text-align: left;
   transition: all 0.3s ease-in-out;
   margin-right: 45px;
@@ -1917,7 +1925,7 @@ h6 {
 }
 .hero-banner-six .button-group .video-button span {
   font-weight: 500;
-  color: var(--black);
+  color: var(--green);
   font-size: 16px;
   padding-left: 14px;
   transition: all 0.3s ease;
@@ -2036,14 +2044,14 @@ h6 {
 .block-style-seventeen {
   padding: 32px 50px 40px 44px;
   // border: 1px solid rgba(255, 255, 255, 0.1);
-  border: 1px solid var(--black);
+  border: 1px solid var(--green);
   border-radius: 17px;
   position: relative;
   z-index: 1;
   // transition: all 0.3s ease-in-out;
 }
 .block-style-seventeen:hover {
-  border-color: var(--pink);
+  border-color: var(--green-light);
   color: var(--white);
 }
 .block-style-seventeen:before {
@@ -2053,7 +2061,7 @@ h6 {
   height: 100%;
   top: 0;
   left: 0;
-  background: var(--pink);
+  background: var(--green-light);
   border-radius: 17px;
   z-index: -1;
   opacity: 0;
@@ -2187,7 +2195,7 @@ h6 {
 .clientSliderFive .name {
   font-size: 24px;
   font-weight: 500;
-  color: var(--black);
+  color: var(--green);
 }
 .client-feedback-slider-five .slider-arrow li {
   width: 20px;
@@ -2196,7 +2204,7 @@ h6 {
   cursor: pointer;
   margin: 0 7px;
   font-size: 26px;
-  color: var(--black);
+  color: var(--green);
   transition: all 0.3s ease-in-out;
   transform: scale(0.6);
 }
@@ -2280,7 +2288,7 @@ h6 {
 .pricing-table-area-five .pr-table-wrapper .pack-name {
   font-size: 32px;
   font-weight: 500;
-  color: var(--black);
+  color: var(--green);
   padding: 39px 0 37px;
 }
 .pricing-table-area-five .pr-table-wrapper .pr-feature li {
@@ -2296,13 +2304,13 @@ h6 {
   top: 0;
 }
 .pricing-table-area-five .pr-table-wrapper .price {
-  color: var(--black);
+  color: var(--green);
   font-size: 28px;
   padding: 45px 0 7px;
 }
 .pricing-table-area-five .pr-table-wrapper .trial-text {
   // color: rgba(255, 255, 255, 0.54);
-  color: var(--black);
+  color: var(--green);
 }
 .pricing-table-area-five .pr-table-wrapper .trial-button {
   width: 170px;
@@ -2310,7 +2318,7 @@ h6 {
   border-radius: 24px;
   font-size: 16px;
   font-weight: 500;
-  color: var(--black);
+  color: var(--green);
   margin-top: 35px;
   text-align: center;
 }
@@ -2375,28 +2383,28 @@ h6 {
 .theme-footer-six .title {
   font-weight: 500;
   font-size: 20px;
-  color: var(--black);
+  color: var(--green);
   margin-bottom: 30px;
   text-align: center;
 }
 .theme-footer-six .social-icon li a {
   width: 36px;
   height: 36px;
-  border: 1px solid var(--black);
+  border: 1px solid var(--green);
   border-radius: 50%;
   line-height: 34px;
   text-align: center;
-  color: var(--black);
+  color: var(--green);
   margin: 0 5px;
   transition: all 0.3s ease-in-out;
 }
 .theme-footer-six .social-icon li a:hover {
-  background: var(--pink);
-  border-color: var(--pink);
-  color: var(--black);
+  background: var(--green-light);
+  border-color: var(--green-light);
+  color: var(--green);
 }
 .theme-footer-six .email {
-  color: rgba(var(--black), 0.8);
+  color: rgba(var(--green), 0.8);
 }
 .theme-footer-six .email:hover {
   text-decoration: underline;
@@ -2445,12 +2453,12 @@ h6 {
   transition: all 0.2s ease-in-out;
 }
 .theme-menu-five .right-widget .download-btn.style-two button {
-  background: var(--black);
+  background: var(--green);
   border: 2px solid var(--white);
   line-height: 56px;
 }
 .theme-menu-five .right-widget .download-btn.style-two .dropdown-menu {
-  background: var(--black);
+  background: var(--green);
   border: 2px solid var(--white);
 }
 .theme-menu-five .right-widget .download-btn.show button:after {
@@ -2458,7 +2466,7 @@ h6 {
 }
 .theme-menu-five .right-widget .download-btn .dropdown-menu {
   width: 100%;
-  background: var(--black) 5d1;
+  background: var(--green) 5d1;
   border-radius: 0px 0px 10px 10px;
   border: none;
   margin: -5px 0 0 0;
@@ -2613,14 +2621,14 @@ h6 {
   transition: all 0.3s ease-in-out;
   background: var(--white);
   padding: 0 20px;
-  color: var(--black);
+  color: var(--green);
 }
 .error-page .text-wrapper .back-home img {
   margin-left: 12px;
 }
 .error-page .text-wrapper .back-home:hover {
   background: var(--purple-blue);
-  color: var(--black);
+  color: var(--green);
 }
 .error-page .text-wrapper .logo {
   position: absolute;
@@ -2629,7 +2637,7 @@ h6 {
 }
 /*----------------- Fancy Feature Twenty Seven -------------------*/
 .block-style-twentySeven {
-  border: 1px solid var(--black);
+  border: 1px solid var(--green);
   border-radius: 20px;
   padding: 55px 12px 40px;
   text-align: center;
@@ -2637,8 +2645,8 @@ h6 {
   transition: all 0.3s ease-in-out;
 }
 // .block-style-twentySeven:hover {
-//   border-color: var(--black);
-//   background: var(--black);
+//   border-color: var(--green);
+//   background: var(--green);
 //   box-shadow: 0 15px 40px rgba(21, 21, 21, 0.09);
 // }
 .block-style-twentySeven .icon {
@@ -2667,7 +2675,7 @@ h6 {
 .theme-menu-seven .navbar-nav .nav-item .nav-link {
   font-size: 18px;
   margin: 0 25px;
-  color: var(--black);
+  color: var(--green);
 }
 .theme-menu-seven .navbar-nav .nav-item .nav-link.active {
   text-decoration: underline;
@@ -2676,7 +2684,7 @@ h6 {
   font-size: 18px;
   font-weight: 500;
   line-height: 46px;
-  color: var(--black);
+  color: var(--green);
   margin-right: 40px;
   transition: all 0.3s ease-in-out;
 }
@@ -2697,7 +2705,7 @@ h6 {
 .theme-menu-one.center-white .navbar-nav .nav-item .nav-link {
   font-size: 18px;
   margin: 0 25px;
-  color: var(--black);
+  color: var(--green);
 }
 .theme-menu-one.center-white .logo {
   position: absolute;
@@ -2716,7 +2724,7 @@ h6 {
   position: static;
 }
 .theme-menu-one.center-white .right-button-group a {
-  color: var(--black);
+  color: var(--green);
 }
 
 /*------------------ Fancy Feature Twelve --------------*/
@@ -2751,7 +2759,7 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--pink);
+  background: var(--green-light);
   padding: 0px 5px 20px 30px;
   transition: all 0.4s ease-in-out;
   opacity: 0;
@@ -2787,7 +2795,7 @@ h6 {
     justify-content: center;
     font-size: 17px;
     border-radius: 50%;
-    background: var(--black);
+    background: var(--green);
     color: var(--white);
     position: absolute;
     top: 20px;
@@ -2802,7 +2810,7 @@ h6 {
   }
 }
 .portfolio-block-two .fancybox:hover {
-  background: var(--black);
+  background: var(--green);
 }
 .portfolio-block-two:hover .fancybox {
   opacity: 1;
@@ -2826,7 +2834,7 @@ h6 {
   transition: all 0.3s ease-in-out;
 }
 .po-control-one li.react-tabs__tab.react-tabs__tab--selected button {
-  background: var(--black);
+  background: var(--green);
   color: var(--white);
 }
 
@@ -2846,7 +2854,7 @@ h6 {
   --background: #fff;
   --border: #d1d6ee;
   --border-hover: #bbc1e1;
-  --border-active: var(--pink);
+  --border-active: var(--green-light);
   --tick: #fff;
   position: relative;
   display: flex;
