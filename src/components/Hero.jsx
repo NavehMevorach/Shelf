@@ -1,18 +1,46 @@
 import React, { useState } from "react"
 import Modal from "react-modal"
+import useEventListener from "@use-it/event-listener"
+import ReactSpritz from "react-spritz"
 import bg from "./../assets/images/assets/bgHero.svg"
 import HeaderPopupForm from "./form/HeaderPopupForm"
-import ils from "./../assets/images/assets/ils_19.svg"
 import close from "./../assets/images/icon/close.svg"
+
+const data =
+  "Hi! we know you're used for a catchy slogan, but we thought to be straitgorward and tell you about shelf without unnecessary Bullshit. Shelf is a changing the way we thinking about stuff. instead of physical ownership, we provide instant access to what you need when you need it. If that cought you attention we would love to hear from you and if you want to read more you're more than welcome to scroll down. See ya!"
 
 Modal.setAppElement("#root")
 
 function Hero() {
+  const [playing, setPlaying] = useState(true)
+  const [stopedPlaying, setStopedPlaying] = useState(false)
+  const [restart, setRestart] = useState(true)
   const [isOpen, setIsOpen] = useState(false)
+
+  function handleKeyPress(e) {
+    e.preventDefault()
+    console.log(e)
+    if (e.keyCode === 32) {
+      setPlaying(!playing)
+    }
+  }
+
+  function handleStop() {
+    setRestart(false)
+    setStopedPlaying(true)
+  }
+
+  function handleRestart(e) {
+    e.preventDefault()
+    setRestart(true)
+    setStopedPlaying(false)
+  }
 
   function toggleModalOne() {
     setIsOpen(!isOpen)
   }
+
+  useEventListener("keydown", handleKeyPress)
 
   return (
     <>
@@ -21,9 +49,37 @@ function Hero() {
           <div className="row">
             <div className="col-xl-7 col-lg-10 col-md-9 m-auto">
               <div className="title-style-six text-center mt-25">
-                <h2>
+                <div onKeyDown={handleKeyPress} className="spritz-container">
+                  <h1>
+                    {restart && (
+                      <ReactSpritz
+                        text={data}
+                        wpm={200}
+                        playing={playing}
+                        startTimeout={2000}
+                        onStop={handleStop}
+                        normalized
+                      />
+                    )}
+                    {stopedPlaying && (
+                      <div className="form-input-updated">
+                        <button
+                          onClick={toggleModalOne}
+                          className="demo-button">
+                          Try it now
+                        </button>
+                      </div>
+                    )}
+                  </h1>
+                  {stopedPlaying ? (
+                    <p onClick={handleRestart}>Click Here to repeat</p>
+                  ) : (
+                    <p>Press Space to {playing ? "Pause" : "Continue"}</p>
+                  )}
+                </div>
+                {/* <h1>
                   Replacing Shopping <br /> With <span>Access.</span>
-                </h2>
+                </h1>
                 <p>
                   A new way of thinking about 'stuff' - instead of physical
                   ownership, <br /> we provide instant access to what you need
@@ -33,7 +89,7 @@ function Hero() {
                   <button onClick={toggleModalOne} className="demo-button">
                     Try it now
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -71,7 +127,7 @@ function Hero() {
             {/* /.left-side */}
 
             <div className="right-side">
-              <h2 className="form-title">List your Item</h2>
+              <h2 className="form-title">Start Access More</h2>
               <HeaderPopupForm />
             </div>
             {/*  /.right-side */}

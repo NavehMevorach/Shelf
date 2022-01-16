@@ -2948,3 +2948,28 @@ h6 {
     transform: scale(1);
   }
 }
+
+.spritz-container {
+  .container {
+    max-width: 100%;
+    font-size: 70px;
+    font-weight: 700;
+  }
+
+  .spritz {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .highlight {
+    color: #37c89a;
+    display: table-cell;
+  }
+
+  .leftSide {
+    text-align: right;
+  }
+  .rightSide {
+    text-align: left;
+  }
+}

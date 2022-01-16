@@ -67,7 +67,7 @@ function LastCta() {
             {/* /.left-side */}
 
             <div className="right-side">
-              <h2 className="form-title">List your Item</h2>
+              <h2 className="form-title">Start Access More</h2>
               <HeaderPopupForm />
             </div>
             {/*  /.right-side */}
