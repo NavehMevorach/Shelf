@@ -15,7 +15,6 @@ function Hero() {
   const [stopedPlaying, setStopedPlaying] = useState(false)
   const [restart, setRestart] = useState(true)
   const [isOpen, setIsOpen] = useState(false)
-  const isMobile = navigator.userAgentData.mobile
   useEffect(() => {}, [])
 
   function handleKeyPress(e) {
@@ -27,9 +26,7 @@ function Hero() {
 
   function handleTapToPause(e) {
     e.preventDefault()
-    if (isMobile) {
-      setPlaying(!playing)
-    }
+    setPlaying(!playing)
   }
 
   function handleStop() {
@@ -79,12 +76,10 @@ function Hero() {
                     )}
                   </h1>
                   {stopedPlaying ? (
-                    <p onClick={handleRestart}>
-                      {isMobile ? "Tap" : "Click"} Here to repeat
-                    </p>
+                    <p onClick={handleRestart}>Click Here to repeat</p>
                   ) : (
                     <p onClick={handleTapToPause}>
-                      {isMobile ? "Tap to " : "Press Space to "}
+                      Press Space or Click to
                       {playing ? "Pause" : "Continue"}
                     </p>
                   )}
