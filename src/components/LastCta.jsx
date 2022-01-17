@@ -19,7 +19,7 @@ function LastCta() {
             <div className="col-xl-8 col-lg-11 m-auto">
               <div className="title-style-six text-center">
                 <h2>
-                  Love our Vision? <br /> <span>Join</span> our Beta
+                  Love our Vision? <br /> <span>Join</span> Now.
                 </h2>
               </div>
 
