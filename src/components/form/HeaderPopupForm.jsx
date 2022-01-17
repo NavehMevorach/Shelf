@@ -28,7 +28,7 @@ const options = [
   "Evening dresses / suits",
   "jewelry / watches (Luxury)",
   "Lawn mower",
-  "Accommodation kits",
+  "Hosting kits",
   "Ladder",
   "Coffe machine",
   "Other",

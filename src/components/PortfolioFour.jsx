@@ -16,7 +16,7 @@ const Entertainment = [
   {
     title: "Board Games",
     meta: "Development, Design",
-    dalayAnimation: "",
+    dalayAnimation: "0",
   },
   {
     title: "Game Console",
@@ -31,12 +31,12 @@ const Entertainment = [
   {
     title: "Projector",
     meta: "Development, Design",
-    dalayAnimation: "0",
+    dalayAnimation: "300",
   },
   {
-    title: "Something",
+    title: "Surfboard",
     meta: "Development, Plugin",
-    dalayAnimation: "100",
+    dalayAnimation: "400",
   },
 ]
 
@@ -44,27 +44,27 @@ const Kitchen = [
   {
     title: "Mixer",
     meta: "Development, Plugin",
-    dalayAnimation: "100",
+    dalayAnimation: "0",
   },
   {
     title: "Blender",
     meta: "Development, Design",
-    dalayAnimation: "0",
+    dalayAnimation: "100",
   },
   {
     title: "Rice maker",
     meta: "Development, Design",
-    dalayAnimation: "100",
+    dalayAnimation: "200",
   },
   {
     title: "Waffle Maker",
     meta: "Development, Design",
-    dalayAnimation: "100",
+    dalayAnimation: "300",
   },
   {
     title: "Pancake Maker",
     meta: "Development, Design",
-    dalayAnimation: "100",
+    dalayAnimation: "400",
   },
 ]
 
@@ -72,7 +72,7 @@ const Party = [
   {
     title: "Cocktail kit",
     meta: "Development, Branding",
-    dalayAnimation: "200",
+    dalayAnimation: "0",
   },
   {
     title: "Party games kit",
@@ -82,12 +82,12 @@ const Party = [
   {
     title: "Party Decoration",
     meta: "Development, Design",
-    dalayAnimation: "0",
+    dalayAnimation: "200",
   },
   {
     title: "Chairs",
     meta: "Development, Branding",
-    dalayAnimation: "200",
+    dalayAnimation: "300",
   },
 ]
 
@@ -95,12 +95,12 @@ const Music = [
   {
     title: "Recording Equipment",
     meta: "Development, Design",
-    dalayAnimation: "",
+    dalayAnimation: "0",
   },
   {
     title: "Mixer",
     meta: "Development, Design",
-    dalayAnimation: "0",
+    dalayAnimation: "100",
   },
 
   {
@@ -108,45 +108,75 @@ const Music = [
     meta: "Development, Design",
     dalayAnimation: "200",
   },
+  {
+    title: "Speakers",
+    meta: "Development, Design",
+    dalayAnimation: "300",
+  },
 ]
 
 const Photography = [
   {
     title: "Professinal Camera",
     meta: "Development, Plugin",
-    dalayAnimation: "100",
+    dalayAnimation: "0",
   },
   {
     title: "Go-pro",
     meta: "Development, Branding",
-    dalayAnimation: "200",
+    dalayAnimation: "100",
   },
   {
     title: "Video Camera",
     meta: "Development, Design",
-    dalayAnimation: "0",
+    dalayAnimation: "200",
   },
   {
     title: "Tripods",
     meta: "Development, Design",
-    dalayAnimation: "0",
+    dalayAnimation: "300",
+  },
+  {
+    title: "Drones",
+    meta: "Development, Design",
+    dalayAnimation: "400",
   },
 ]
 const Utilities = [
   {
-    title: "Snow Blower",
+    title: "Hardware tools",
+    meta: "Development, Plugin",
+    dalayAnimation: "0",
+  },
+  {
+    title: "Driller",
     meta: "Development, Plugin",
     dalayAnimation: "100",
   },
   {
+    title: "Hosting kit",
+    meta: "Development, Plugin",
+    dalayAnimation: "200",
+  },
+  {
+    title: "Hardware tools",
+    meta: "Development, Plugin",
+    dalayAnimation: "300",
+  },
+  {
+    title: "Snow Blower",
+    meta: "Development, Plugin",
+    dalayAnimation: "400",
+  },
+  {
     title: "Lawn Mower",
     meta: "Development, Branding",
-    dalayAnimation: "200",
+    dalayAnimation: "500",
   },
   {
     title: "Ladder",
     meta: "Development, Design",
-    dalayAnimation: "0",
+    dalayAnimation: "600",
   },
 ]
 
