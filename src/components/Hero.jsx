@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Modal from "react-modal"
 import useEventListener from "@use-it/event-listener"
 import ReactSpritz from "react-spritz"
@@ -15,11 +15,19 @@ function Hero() {
   const [stopedPlaying, setStopedPlaying] = useState(false)
   const [restart, setRestart] = useState(true)
   const [isOpen, setIsOpen] = useState(false)
+  const isMobile = navigator.userAgentData.mobile
+  useEffect(() => {}, [])
 
   function handleKeyPress(e) {
     e.preventDefault()
-    console.log(e)
     if (e.keyCode === 32) {
+      setPlaying(!playing)
+    }
+  }
+
+  function handleTapToPause(e) {
+    e.preventDefault()
+    if (isMobile) {
       setPlaying(!playing)
     }
   }
@@ -71,9 +79,14 @@ function Hero() {
                     )}
                   </h1>
                   {stopedPlaying ? (
-                    <p onClick={handleRestart}>Click Here to repeat</p>
+                    <p onClick={handleRestart}>
+                      {isMobile ? "Tap" : "Click"} Here to repeat
+                    </p>
                   ) : (
-                    <p>Press Space to {playing ? "Pause" : "Continue"}</p>
+                    <p onClick={handleTapToPause}>
+                      {isMobile ? "Tap to " : "Press Space to "}
+                      {playing ? "Pause" : "Continue"}
+                    </p>
                   )}
                 </div>
                 {/* <h1>
