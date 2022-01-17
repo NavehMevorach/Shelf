@@ -301,7 +301,7 @@ const PortfolioFour = () => {
                   data-aos="fade-right"
                   data-aos-delay={item.dalayAnimation}>
                   <div className="block-style-seventeen block-style-seventeen--items">
-                    <div className="static-text">
+                    <div className="static-text ">
                       <h3>{item.title}</h3>
                     </div>
                   </div>
