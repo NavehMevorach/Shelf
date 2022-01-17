@@ -7,7 +7,7 @@ import HeaderPopupForm from "./form/HeaderPopupForm"
 import close from "./../assets/images/icon/close.svg"
 
 const data =
-  "Hi! we know you're used to a catchy slogan, but we thought to be honest and tell you about Shelf without unnecessary bullshit. Shelf is an on-demand service that lets you access items, tools, and equipment, which are delivered to your door, and we will collect them when you're done. With just a few taps on your phone, you can access infinite products whenever you want and wherever you are. If you want to check if the service is available in your area, you can click on the button that should appear on the screen right now."
+  "Hi! we know you're used to a catchy slogan, but we thought to be honest and tell you about Shelf without unnecessary bullshit. Shelf is an on-demand service that lets you access items, tools, and equipment, which are delivered to your door, and we will collect them when you're done. With just a few taps on your phone, you can access infinite products whenever you want and wherever you are."
 Modal.setAppElement("#root")
 
 function Hero() {
