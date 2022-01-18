@@ -61,7 +61,6 @@ function Hero() {
                         playing={playing}
                         startTimeout={2000}
                         onStop={handleStop}
-                        normalized
                       />
                     )}
                     {stopedPlaying && (
