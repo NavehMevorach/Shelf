@@ -2966,6 +2966,10 @@ h6 {
 }
 
 .spritz-container {
+  .btn-pause {
+    transform: translateY(100px);
+    margin: 0 auto;
+  }
   .container {
     max-width: 100%;
     font-weight: 700;

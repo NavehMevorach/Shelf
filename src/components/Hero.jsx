@@ -17,12 +17,12 @@ function Hero() {
   const [isOpen, setIsOpen] = useState(false)
   useEffect(() => {}, [])
 
-  function handleKeyPress(e) {
-    e.preventDefault()
-    if (e.keyCode === 32) {
-      setPlaying(!playing)
-    }
-  }
+  // function handleKeyPress(e) {
+  //   e.preventDefault()
+  //   if (e.keyCode === 32) {
+  //     setPlaying(!playing)
+  //   }
+  // }
 
   function handleTapToPause() {
     setPlaying(!playing)
@@ -43,7 +43,7 @@ function Hero() {
     setIsOpen(!isOpen)
   }
 
-  useEventListener("keydown", handleKeyPress)
+  // useEventListener("keydown", handleKeyPress)
 
   return (
     <>
@@ -52,7 +52,7 @@ function Hero() {
           <div className="row">
             <div className="col-xl-7 col-lg-10 col-md-9 m-auto">
               <div className="title-style-six text-center mt-25">
-                <div onKeyDown={handleKeyPress} className="spritz-container">
+                <div className="spritz-container">
                   <h1>
                     {restart && (
                       <ReactSpritz
@@ -74,13 +74,15 @@ function Hero() {
                     )}
                   </h1>
                   {stopedPlaying ? (
-                    <p onClick={handleRestart}>Click Here to repeat</p>
+                    <button className="btn-pause" onClick={handleRestart}>
+                      Click Here to repeat
+                    </button>
                   ) : (
-                    <p onClick={handleTapToPause}>
+                    <button className="btn-pause" onClick={handleTapToPause}>
                       {playing
-                        ? "Press Space or Click to Pause"
-                        : "Press Space or Click to Continue"}
-                    </p>
+                        ? "Click Here to Pause"
+                        : "Click Here to Continue"}
+                    </button>
                   )}
                 </div>
                 {/* <h1>
