@@ -194,7 +194,7 @@ const HeaderLandingDark = () => {
                     <blockquote>
                       “I think our obsession with ownership is at a tipping
                       point and the sharing economy is part of the antidote for
-                      that.””
+                      that.”
                     </blockquote>
                     <span className="bio">—Richard Branson</span>
                   </div>
