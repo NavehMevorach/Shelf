@@ -584,6 +584,14 @@
   animation: none !important;
 }
 
+.portfolio-container {
+  .control {
+    button {
+      color: var(--green);
+    }
+  }
+}
+
 .theme-menu-seven {
   .landing-menu-onepage .nav-item .nav-link::before {
     background: #fff;
